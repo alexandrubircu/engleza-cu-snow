@@ -2,6 +2,7 @@ import React from "react";
 import './styles.css'
 import gidImage from "../../assets/images/gidImage.png"
 import gidmobileImage from '../../assets/images/gidmobileImage.png'
+import { Link } from "react-router-dom";
 
 const CoursesBlock = () => {
     return(
@@ -46,7 +47,7 @@ const CoursesBlock = () => {
                                 <h2>CURSUL</h2>
                                 <p>TOEFL</p>
                                 <p>DURATA: 21 de zile</p>
-                                <a href='ToeflCourse'><button className="coursesButtonPink">AFLA DETALII</button></a>
+                                <Link to='/ToeflCourse'><button className="coursesButtonPink">AFLA DETALII</button></Link>
                                 <p>4 900 MDL / 245 EUR</p>
                             </div>
                         </div>
