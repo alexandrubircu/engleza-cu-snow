@@ -1,0 +1,374 @@
+.coursesBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gidTicketMobile{display: none;}
+.coursesTopBlock{
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.coursesTopBlock > h1{
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.snow{
+    color: #FEE440;
+}
+.coursesBottomBlock{
+    height: 90%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.course{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coursesRow{
+    display: flex;
+}
+.coursesTicketYellow{
+    background-color: #FEE440;
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    margin-right: 40px;
+    margin-top: 25px;
+} 
+
+
+.coursesTicketWhite{
+    background-color: #ffffff;
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    margin-right: 40px;
+    margin-top: 25px;
+}
+.coursesTicketContentYellow,.coursesTicketContentWhite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 30px 0;
+}
+.coursesTicketContentYellow > h2{
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+.coursesTicketContentWhite > h2{
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+}
+.coursesTicketContentYellow > p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.coursesTicketContentWhite > p{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+.coursesTicketContentWhite >a{
+    height: 56px;
+    width: calc(100% - 25%);
+    align-items: center;
+    justify-content: center;
+}
+.coursesTicketContentYellow >a{
+    height: 56px;
+    width: calc(100% - 25%);
+    align-items: center;
+    justify-content: center;
+}
+.coursesTicketContentYellow >p:not(:nth-child(3)){
+    color: white;
+}
+.coursesButtonWhite, .coursesButtonPink{
+    border-radius: 10px;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    font-weight: 700;
+}
+.coursesButtonWhite{
+    background-color: #ffffff;
+}
+.coursesButtonWhite:active{
+    background-color: #FFF5B9;   
+  }
+.coursesButtonPink{
+    background-color: #FBB1CF;
+    color: white;
+}
+.coursesButtonPink:active{
+    background-color: #FFA3C8;
+}
+.gidTicket{
+    background-color: #FEE440;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 25px;
+}
+.gidTicketContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 20px 0;
+}
+.gidTicketContent > p{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.gidTicketContent > img{
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border:2px solid white;
+}
+.gidTicketContent >a{
+    height: 56px;
+    width: calc(100% - 25%);
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 1250px) {
+    .coursesTicketYellow {
+        width: 250px;
+        height: 250px;
+    }
+    .coursesTicketWhite {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .coursesBottomBlock {
+        align-items: center;
+    }
+    .course {
+        flex-direction: row;
+    }
+    .coursesRow {
+        display: flex;
+        flex-direction: column;
+    }
+    .coursesTicketYellow {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .coursesTicketWhite {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .gidTicket {
+        height: fit-content;
+        margin-top: 0;
+    }
+    .gidTicketContent{
+        justify-content: center;
+        padding: 18px 0;
+    }
+    .gidTicketContent > img {
+        width: 250px;
+        height: 390px;
+    }
+    .gidTicketContent > p {
+       margin: 15px 0;
+    }
+    
+}
+@media screen and (max-width: 850px){
+    .coursesTopBlock >h1{
+        font-size: 35px;
+    }
+    .coursesBottomBlock {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .coursesTicketYellow {
+        width: 220px;
+        height: 220px;
+        margin: 10px;
+    }
+    .coursesTicketWhite {
+        width: 220px;
+        height: 220px;
+        margin: 10px;
+    }
+    .coursesTicketContentYellow >h2 , .coursesTicketContentWhite >h2{
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .coursesTicketContentYellow >p{
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .coursesTicketContentWhite >p{
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .coursesButtonWhite, .coursesButtonPink{
+        width: 170px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .coursesTicketContentYellow, .coursesTicketContentWhite {
+        justify-content: center;
+    }
+    
+
+    .gidTicket {display: none;}
+    .gidTicketMobile{
+        display: flex;
+        width: 100%;
+        height: 220px;
+        margin-top: 10px;
+    }
+    .gidTicketContentMobile{
+        display: flex;
+        flex-direction: row;
+        background-color: #FEE440;
+        border-radius: 10px;
+        box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        height: 100%;
+        margin: 0 10px;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .gidTicketLeftContentMobile{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .gidTicketLeftContentMobile >h1{
+        margin-top: 20px;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .gidTicketLeftContentMobile >p{
+        font-size: 18px;
+        font-weight: 700;
+        width: 200px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .coursesButtonWhiteMobile{
+        border-radius: 10px;
+        border: none;
+        background: #FFF;
+        box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+        width: 170px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .coursesButtonWhiteMobile:active{
+        background-color: #FFF5B9;   
+      }
+    .gidTicketRightContentMobile{
+
+        display: flex;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .gidTicketRightContentMobile >img{
+        border-radius: 10px;
+        border: 1px solid #FFF;
+        box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+        width: 97%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+    .coursesTopBlock >h1 {
+        font-size: 30px;
+    }
+    .coursesTicketContentWhite >p:not(:nth-child(2)){
+        display: none;
+    }
+    .coursesTicketContentYellow >p:not(:nth-child(2)){
+        display: none;
+    }
+    .gidTicketContentMobile {
+        
+        height: 180px;
+    }
+    .coursesTicketWhite {
+        width: 180px;
+        height: 180px;
+    }
+    .coursesTicketYellow{
+        width: 180px;
+        height: 180px;
+    }
+    .coursesTicketContentWhite >a {
+        height: fit-content;
+        width: fit-content;
+    }
+    .coursesTicketContentYellow >a {
+        height: fit-content;
+        width: fit-content;
+    }
+    .coursesButtonWhite{
+        width: 150px;
+        margin: 10px 0;
+    }
+    .coursesButtonPink{
+        width: 150px;
+        margin: 10px 0;
+    }
+    .gidTicketLeftContentMobile >h1 {
+        width: 180px;
+        font-size: 22px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .gidTicketLeftContentMobile >p{
+       display: none;
+    }
+    .coursesButtonWhiteMobile {
+        width: 150px;
+        margin: 10px 0;
+    }
+    .gidTicketRightContentMobile >img {
+        
+        width: 180px;
+        height: 100%;
+    }
+}
