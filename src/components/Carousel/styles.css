@@ -1,0 +1,78 @@
+.phoneBlock{
+    position: relative;
+    z-index: 999;
+    width: 250px;
+    height: 520px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 40px;
+    
+}
+.phoneBlock::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../../assets/images/phoneImage.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.phoneBackGround{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 99;
+}
+.phoneBackGround > img{
+    width: 100%;
+    padding: 12px 8px 11px;
+}
+.phonePhoto >img{
+    position: relative;
+    right: 98%;
+    bottom: 0.5%;
+    width: 400px;
+    height: 800px;
+}
+
+.slick-dots {
+    bottom: 40px !important;
+    z-index: 99999;
+}
+
+.slick-dots li.slick-active button:after {
+    color: white !important;
+}
+
+.slick-dots li button:after {
+    color: white !important;
+}
+
+.slick-dots li button::after {
+    font-size: 12px;
+}
+
+
+.phoneBlock .slick-prev,
+.phoneBlock .slick-next {
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 0;
+  z-index: 1; 
+}
+
+
+.phoneBlock .slick-prev:after,
+.phoneBlock .slick-next:after {
+  font-size: 24px; 
+  color: #fff;
+}
+.phoneBlock .slick-prev:after,
+.phoneBlock .slick-next:after{
+    color: transparent;
+}

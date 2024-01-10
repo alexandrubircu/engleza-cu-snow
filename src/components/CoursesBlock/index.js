@@ -17,7 +17,7 @@ const CoursesBlock = () => {
                                 <h2>CURSURILE</h2>
                                 <p>A1 - A2</p>
                                 <p>DURATA: 21 de zile</p>
-                                <a href="CoursesA1_A2"><button className="coursesButtonWhite">AFLA DETALII</button></a>
+                                <a href="CoursesA1-A2"><button className="coursesButtonWhite">AFLA DETALII</button></a>
                                 <p>3 150 MDL / 160 EUR</p>
                             </div>
                         </div>
@@ -26,7 +26,7 @@ const CoursesBlock = () => {
                                 <h2>CURSURILE</h2>
                                 <p>B1-B2</p>
                                 <p>DURATA: 21 de zile</p>
-                                <a href="CoursesB1_B2"><button className="coursesButtonPink">AFLA DETALII</button></a>
+                                <a href="CoursesB1-B2"><button className="coursesButtonPink">AFLA DETALII</button></a>
                                 <p>3 600 MDL / 180 EUR</p>
                             </div>
                         </div>
@@ -35,7 +35,7 @@ const CoursesBlock = () => {
                                 <h2>CURSURILE</h2>
                                 <p>C1-C2</p>
                                 <p>DURATA: 21 de zile</p>
-                                <a href="CoursesC1_C2"><button className="coursesButtonWhite">AFLA DETALII</button></a>
+                                <a href="CoursesC1-C2"><button className="coursesButtonWhite">AFLA DETALII</button></a>
                                 <p>3 600 MDL / 180 EUR</p>
                             </div>
                         </div>

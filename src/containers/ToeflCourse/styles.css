@@ -1,0 +1,100 @@
+.toeflBlock{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/images/coursebackgroundImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+.titleToeflBlock{
+    display: flex;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.titleToeflBlock >p{
+    font-size: 40px;
+    font-weight: 700;
+}
+.TOEFL{
+    color: #A5D3FD;
+}
+.toeflContentBlock{
+    display: flex;
+    height: 90%;
+}
+.toeflInfoBlock{
+    background-color: white;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 780px;
+    align-items: center;
+    justify-content: center;
+}
+.toeflInfoBlock >h1{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.toeflInfoBlock >p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.GiftText{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: #A5D3FD;
+   font-size: 22px;
+   font-weight: 700;
+}
+.ticket_phoneBlock{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: fit-content;
+    margin-left: 10px;
+    align-items: center;
+}
+.toeflTicket{
+    background-color: #FEE440;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+}
+.toeflTicket >h2{
+    color: white;
+    font-size: 25px;
+}
+.toeflTicket >p{
+    font-size: 19px;
+    font-weight: 700;
+    color: white;
+}
+.toeflTicket >p:not(:nth-child(4)){
+    color: black;
+}
+.toeflButtonWhite{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    width: calc(100% - 20%);
+    height: 65px;
+    font-size: 22px;
+    font-weight: 700;
+}
