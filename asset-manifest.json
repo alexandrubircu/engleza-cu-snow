@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/engleza-cu-snow/static/css/main.242125a6.css",
-    "main.js": "/engleza-cu-snow/static/js/main.7fd37337.js",
+    "main.js": "/engleza-cu-snow/static/js/main.1c05f563.js",
     "static/js/787.2e96b0b8.chunk.js": "/engleza-cu-snow/static/js/787.2e96b0b8.chunk.js",
     "static/media/expereanceImage.png": "/engleza-cu-snow/static/media/expereanceImage.032daad9f2dab9a0a29b.png",
     "static/media/mainAvatar.png": "/engleza-cu-snow/static/media/mainAvatar.8daf94c05689b50f08a6.png",
@@ -14,11 +14,11 @@
     "static/media/coursebackgroundImage.png": "/engleza-cu-snow/static/media/coursebackgroundImage.5ec90ec69552a7544997.png",
     "index.html": "/engleza-cu-snow/index.html",
     "main.242125a6.css.map": "/engleza-cu-snow/static/css/main.242125a6.css.map",
-    "main.7fd37337.js.map": "/engleza-cu-snow/static/js/main.7fd37337.js.map",
+    "main.1c05f563.js.map": "/engleza-cu-snow/static/js/main.1c05f563.js.map",
     "787.2e96b0b8.chunk.js.map": "/engleza-cu-snow/static/js/787.2e96b0b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.242125a6.css",
-    "static/js/main.7fd37337.js"
+    "static/js/main.1c05f563.js"
   ]
 }
