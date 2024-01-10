@@ -1,4 +1,4 @@
-.toeflBlock{
+.individualBlock{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -9,25 +9,25 @@
     background-position: center;
     align-items: center;
 }
-.titleToeflBlock{
+.titleIndividualBlock{
     display: flex;
     height: 10%;
     align-items: center;
     justify-content: center;
 }
-.titleToeflBlock >p{
+.titleIndividualBlock >p{
     font-size: 40px;
     font-weight: 700;
 }
-.TOEFL{
+.individual{
     color: #A5D3FD;
 }
-.toeflContentBlock{
+.individualContentBlock{
     display: flex;
     height: 90%;
 }
-.toeflCaruselMobile{display: none;}
-.toeflInfoBlock{
+.individualCaruselMobile{display: none;}
+.individualInfoBlock{
     background-color: white;
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -38,27 +38,20 @@
     align-items: center;
     justify-content: center;
 }
-.toeflInfoBlock >h1{
+.individualInfoBlock >h1{
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 20px;
 }
-.toeflInfoBlock >p{
+.individualInfoBlock >p{
     font-size: 20px;
     font-weight: 500;
     margin-left: 20px;
     margin-right: 20px;
 }
-.GiftText{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   color: #A5D3FD;
-   font-size: 22px;
-   font-weight: 700;
-}
-.ticket_phoneBlock{
+
+
+.individualTicket_phoneBlock{
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -66,7 +59,7 @@
     margin-left: 10px;
     align-items: center;
 }
-.toeflTicket{
+.individualTicket{
     background-color: #FEE440;
     display: flex;
     flex-direction: column;
@@ -78,19 +71,18 @@
     border-radius: 10px;
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
 }
-.toeflTicket >h2{
+.individualTicket >h2{
     color: white;
-    font-size: 25px;
 }
-.toeflTicket >p{
-    font-size: 19px;
+.individualTicket >p{
+    font-size: 20px;
     font-weight: 700;
     color: white;
 }
-.toeflTicket >p:not(:nth-child(4)){
+.individualTicket >p:not(:nth-child(4)){
     color: black;
 }
-.toeflButtonWhite{
+.individualButtonWhite{
     background-color: white;
     border-radius: 10px;
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
@@ -100,56 +92,63 @@
     font-size: 22px;
     font-weight: 700;
 }
+.individualPhone{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 850px) {
-    .toeflInfoBlock {
+    .individualInfoBlock {
         width: 400px;
     }
-    .ticket_phoneBlock {
+    .individualTicket_phoneBlock {
         margin-left: 0;
     }
 }
 @media screen and (max-width: 720px) {
-    .titleToeflBlock {
+    .titleIndividualBlock {
         margin: 10px 0;
     }
-    .toeflBlock{
+    .individualBlock{
         height: 100%;
     }
-    .toeflContentBlock {
+    .individualContentBlock {
         flex-direction: column-reverse;
         align-items: center;
     }
-    .ticket_phoneBlock > div:last-child{
+    .individualTicket_phoneBlock > div:last-child{
         display: none;
     }
-    .ticket_phoneBlock{
+    .individualTicket_phoneBlock{
         width: 100%;
     }
-    .toeflTicket{
+    .individualTicket{
         width: 100%;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }
-    .toeflInfoBlock {
+    
+
+    .individualInfoBlock {
         height: fit-content;
         padding: 15px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
     }
-    .toeflInfoBlock >h1 {
+    .individualInfoBlock >h1 {
         font-size: 25px;
         font-weight: 700;
         margin-bottom: 8px;
     }
-    .toeflInfoBlock >p {
+    .individualInfoBlock >p {
         margin-left: 0;
         margin-right: 0;
     }
 
-    .toeflCaruselMobile{
+    .individualCaruselMobile{
         display: flex;
     }
-    .toeflCaruselMobile ,.phoneBlock {
+    .individualCaruselMobile ,.phoneBlock {
         width: 300px;
         height: 620px;
         margin-top: 20px;

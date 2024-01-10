@@ -1,6 +1,6 @@
 import React from "react";
 import './styles.css';
-// import Carousel from '../../components/Carousel'
+import Carousel from '../../components/Carousel'
 
 const ToeflCourse = () =>{
     return(
@@ -9,6 +9,7 @@ const ToeflCourse = () =>{
                 <p>Curs <span className="TOEFL">TOEFL</span> </p>
             </div>
             <div className="toeflContentBlock">
+                <div className="toeflCaruselMobile"><Carousel/></div>
                 <div className="toeflInfoBlock">
                     <h1>Descriere</h1>
                     <p>
@@ -30,7 +31,7 @@ const ToeflCourse = () =>{
                         <p>4 900 MDL / 245 EUR</p>
                         <button className="toeflButtonWhite">MAKE OFFER</button>
                     </div>
-                    {/* <Carousel/> */}
+                    <Carousel/>
                 </div>
             </div>
         </div>
