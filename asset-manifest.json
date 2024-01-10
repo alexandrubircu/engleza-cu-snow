@@ -1,24 +1,36 @@
 {
   "files": {
-    "main.css": "/engleza-cu-snow/static/css/main.242125a6.css",
-    "main.js": "/engleza-cu-snow/static/js/main.34475655.js",
+    "main.css": "/engleza-cu-snow/static/css/main.00ab2049.css",
+    "main.js": "/engleza-cu-snow/static/js/main.691a6543.js",
     "static/js/787.2e96b0b8.chunk.js": "/engleza-cu-snow/static/js/787.2e96b0b8.chunk.js",
     "static/media/expereanceImage.png": "/engleza-cu-snow/static/media/expereanceImage.032daad9f2dab9a0a29b.png",
     "static/media/mainAvatar.png": "/engleza-cu-snow/static/media/mainAvatar.8daf94c05689b50f08a6.png",
     "static/media/gidmobileImage.png": "/engleza-cu-snow/static/media/gidmobileImage.276e3fdcb934178d244b.png",
     "static/media/mainImage.png": "/engleza-cu-snow/static/media/mainImage.3ad61c945b959057bfc7.png",
+    "static/media/boockPage1.png": "/engleza-cu-snow/static/media/boockPage1.6098b1f4523e64fd77f3.png",
     "static/media/gidImage.png": "/engleza-cu-snow/static/media/gidImage.7b882fe51ac85e4fac0c.png",
+    "static/media/boockPage4.png": "/engleza-cu-snow/static/media/boockPage4.68844370bb269b9413e5.png",
+    "static/media/C1.1Image.png": "/engleza-cu-snow/static/media/C1.1Image.0484af23ea802c2513a9.png",
     "static/media/A1.1Image.png": "/engleza-cu-snow/static/media/A1.1Image.d12199bd710155878b61.png",
+    "static/media/boockPage2.png": "/engleza-cu-snow/static/media/boockPage2.89a94c629616baa885c6.png",
+    "static/media/B1.1Image.png": "/engleza-cu-snow/static/media/B1.1Image.dc2be27ccdbafa15efaa.png",
     "static/media/whyImage.png": "/engleza-cu-snow/static/media/whyImage.20e6ddd700811e67754d.png",
+    "static/media/boockPage5.png": "/engleza-cu-snow/static/media/boockPage5.1522219e86d101e06ad8.png",
+    "static/media/feedback1.png": "/engleza-cu-snow/static/media/feedback1.28843d23b52a98a43905.png",
     "static/media/mainPageBackground.png": "/engleza-cu-snow/static/media/mainPageBackground.bfddec48bfefae609c7e.png",
+    "static/media/feedback4.png": "/engleza-cu-snow/static/media/feedback4.0802d98ab9e4b13b9503.png",
+    "static/media/feedback3.png": "/engleza-cu-snow/static/media/feedback3.a76cb6871fdc158b4f68.png",
     "static/media/coursebackgroundImage.png": "/engleza-cu-snow/static/media/coursebackgroundImage.5ec90ec69552a7544997.png",
+    "static/media/boockPage3.png": "/engleza-cu-snow/static/media/boockPage3.38ef9b8fe9aa20731d5d.png",
+    "static/media/feedback2.png": "/engleza-cu-snow/static/media/feedback2.2aaf845ba6db20d5fca4.png",
+    "static/media/phoneImage.png": "/engleza-cu-snow/static/media/phoneImage.b27669679d58379b1053.png",
     "index.html": "/engleza-cu-snow/index.html",
-    "main.242125a6.css.map": "/engleza-cu-snow/static/css/main.242125a6.css.map",
-    "main.34475655.js.map": "/engleza-cu-snow/static/js/main.34475655.js.map",
+    "main.00ab2049.css.map": "/engleza-cu-snow/static/css/main.00ab2049.css.map",
+    "main.691a6543.js.map": "/engleza-cu-snow/static/js/main.691a6543.js.map",
     "787.2e96b0b8.chunk.js.map": "/engleza-cu-snow/static/js/787.2e96b0b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.242125a6.css",
-    "static/js/main.34475655.js"
+    "static/css/main.00ab2049.css",
+    "static/js/main.691a6543.js"
   ]
 }
