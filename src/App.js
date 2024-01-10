@@ -1,9 +1,8 @@
-import logo from './logo.svg';
-import MainBlock from './components/MainBlock'
+import MainPage from './containers/MainPage'
 function App() {
   return (
     <div className="App">
-      <MainBlock/>
+      <MainPage/>
     </div>
   );
 }
