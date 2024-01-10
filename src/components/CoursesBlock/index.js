@@ -18,7 +18,7 @@ const CoursesBlock = () => {
                                 <h2>CURSURILE</h2>
                                 <p>A1 - A2</p>
                                 <p>DURATA: 21 de zile</p>
-                                <a href='CoursesA1-A2'><button className="coursesButtonWhite">AFLA DETALII</button></a>
+                                <Link to='/CoursesA1-A2'><button className="coursesButtonWhite">AFLA DETALII</button></Link>
                                 <p>3 150 MDL / 160 EUR</p>
                             </div>
                         </div>
@@ -27,7 +27,7 @@ const CoursesBlock = () => {
                                 <h2>CURSURILE</h2>
                                 <p>B1-B2</p>
                                 <p>DURATA: 21 de zile</p>
-                                <a href="CoursesB1-B2"><button className="coursesButtonPink">AFLA DETALII</button></a>
+                                <Link to="CoursesB1-B2"><button className="coursesButtonPink">AFLA DETALII</button></Link>
                                 <p>3 600 MDL / 180 EUR</p>
                             </div>
                         </div>
@@ -36,7 +36,7 @@ const CoursesBlock = () => {
                                 <h2>CURSURILE</h2>
                                 <p>C1-C2</p>
                                 <p>DURATA: 21 de zile</p>
-                                <a href="CoursesC1-C2"><button className="coursesButtonWhite">AFLA DETALII</button></a>
+                                <Link to="CoursesC1-C2"><button className="coursesButtonWhite">AFLA DETALII</button></Link>
                                 <p>3 600 MDL / 180 EUR</p>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ const CoursesBlock = () => {
                                 <h2>CURSUL</h2>
                                 <p>Cambrdige</p>
                                 <p>DURATA: 21 de zile</p>
-                                <a href="CambridgeCourse"><button className="coursesButtonWhite">AFLA DETALII</button></a>
+                                <Link to="CambridgeCourse"><button className="coursesButtonWhite">AFLA DETALII</button></Link>
                                 <p>4 900 MDL / 245 EUR</p>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ const CoursesBlock = () => {
                                 <h2>CURSUL</h2>
                                 <p>Individual</p>
                                 <p>DURATA: 60 minute </p>
-                                <a href="IndividualCourse"><button className="coursesButtonPink">AFLA DETALII</button></a>
+                                <Link to="IndividualCourse"><button className="coursesButtonPink">AFLA DETALII</button></Link>
                                 <p>580 MDL / 30 EUR</p>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ const CoursesBlock = () => {
                     <div className="gidTicketContent">
                         <img src={gidImage} alt=''/>
                         <p>Ghidul este în format<br/> electronic (PDF).</p>
-                        <a href="TravelGuide"><button className="coursesButtonWhite">AFLA DETALII</button></a>
+                        <Link to="TravelGuide"><button className="coursesButtonWhite">AFLA DETALII</button></Link>
                         <p>29 EUR</p>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ const CoursesBlock = () => {
                         <div className="gidTicketLeftContentMobile">
                             <h1>GID DE CALATORII</h1>
                             <p>Ghidul este în format electronic (PDF).</p>
-                            <a href="TravelGuide"><button className="coursesButtonWhiteMobile">AFLA DETALII</button></a>
+                            <Link to="TravelGuide"><button className="coursesButtonWhiteMobile">AFLA DETALII</button></Link>
                             <p>29 EURO</p>
                         </div>
                         <div className="gidTicketRightContentMobile">
