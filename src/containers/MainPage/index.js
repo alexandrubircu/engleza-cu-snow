@@ -3,7 +3,7 @@ import './styles.css';
 import MainBlock from '../../components/MainBlock'
 import ExpereanceBlock from '../../components/ExpereanceBlock'
 import CoursesBlock from '../../components/CoursesBlock'
-
+import WhyBlock from '../../components/WhyBlock'
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
       <MainBlock/>
       <ExpereanceBlock/>
       <CoursesBlock/>
+      <WhyBlock/>
     </div>
   );
 }

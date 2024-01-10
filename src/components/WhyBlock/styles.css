@@ -1,0 +1,143 @@
+.whyBlock{
+    display: flex;
+    width: 100%;
+    margin: 50px 0;
+    align-items: center;
+
+}
+.whyBlockText{
+    display: flex;
+    flex-direction: column;
+    width: 52%;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+}
+.whyBlockText >h1{
+    position: relative;
+    width: 600px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.whyBlockContentRowPink ,
+.whyBlockContentRowWhite ,
+.whyBlockContentRowYellow{
+    color: white;
+    display: flex;
+    width: 600px;
+    height: fit-content;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    padding: 10px;
+}
+.whyBlockContentRowPink{
+    background-color: #FAAFCE;
+}
+.whyBlockContentRowWhite{
+    background-color: white;
+}
+.whyBlockContentRowYellow{
+    background-color: #FEE14E;
+}
+.whyBlocContentTextRow >h2{
+    font-size: 25px;
+}
+.whyBlocContentTextRow >li{
+    font-size: 18px;
+    font-weight: 500;
+}
+.WhyBlockSnow{
+    display: flex;
+    width: 48%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+@media screen and (max-width: 1220px) {
+    .whyBlockText{
+        position: relative;
+        right: -160px;
+        z-index: 2;
+    }
+    .WhyBlockSnow{
+        position: relative;
+        left: -90px;
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .WhyBlockSnow {
+        display: none;
+    }
+    .whyBlockText {
+        right: 0;
+        width: fit-content
+    }
+    .whyBlock {
+        display: flex;
+        width: 100%;
+        margin: 50px 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1000px) {
+    
+    .whyBlockText {
+        align-items: center;
+
+    }
+    .whyBlockText >h1 {
+        text-align: center;
+        width: 400px;
+    }
+    .whyBlockContentRowPink ,
+    .whyBlockContentRowWhite ,
+    .whyBlockContentRowYellow{
+        width: 500px;
+        
+    }
+        
+}
+@media screen and (max-width: 520px){
+    
+    .whyBlockContentRowPink ,
+    .whyBlockContentRowWhite ,
+    .whyBlockContentRowYellow{
+        width: 460px;
+    }
+    .whyBlockText >h1 {
+        margin-bottom: 10px;
+    }
+    .whyBlocContentTextRow >h2{
+        font-size: 23px;
+    }
+    .whyBlocContentTextRow >li{
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width: 480px){
+    .whyBlock {
+        margin:  0;
+        margin-bottom: 20px;
+    }
+    .whyBlockContentRowPink ,
+    .whyBlockContentRowWhite ,
+    .whyBlockContentRowYellow{
+        width: 400px;
+    }
+    .whyBlockText >h1 {
+        margin-bottom: 10px;
+    }
+    .whyBlocContentTextRow >h2{
+        font-size: 22px;
+    }
+    .whyBlocContentTextRow >li{
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
