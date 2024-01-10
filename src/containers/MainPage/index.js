@@ -4,6 +4,7 @@ import MainBlock from '../../components/MainBlock'
 import ExpereanceBlock from '../../components/ExpereanceBlock'
 import CoursesBlock from '../../components/CoursesBlock'
 import WhyBlock from '../../components/WhyBlock'
+import Footer from '../../components/Footer'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <ExpereanceBlock/>
       <CoursesBlock/>
       <WhyBlock/>
+      <Footer/>
     </div>
   );
 }
