@@ -17,7 +17,7 @@ const CoursesBlock = () => {
                                 <h2>CURSURILE</h2>
                                 <p>A1 - A2</p>
                                 <p>DURATA: 21 de zile</p>
-                                <a href="CoursesA1-A2"><button className="coursesButtonWhite">AFLA DETALII</button></a>
+                                <a href='CoursesA1-A2'><button className="coursesButtonWhite">AFLA DETALII</button></a>
                                 <p>3 150 MDL / 160 EUR</p>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ const CoursesBlock = () => {
                                 <h2>CURSUL</h2>
                                 <p>TOEFL</p>
                                 <p>DURATA: 21 de zile</p>
-                                <a href="ToeflCourse"><button className="coursesButtonPink">AFLA DETALII</button></a>
+                                <a href='ToeflCourse'><button className="coursesButtonPink">AFLA DETALII</button></a>
                                 <p>4 900 MDL / 245 EUR</p>
                             </div>
                         </div>
