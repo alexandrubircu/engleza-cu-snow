@@ -33,7 +33,7 @@
 }
 
 .expereanceRightTitle > h1{
-    font-size: 45px;
+    font-size: 40px;
     margin-left: 75px;
     margin-bottom: 25px;
 }
@@ -56,6 +56,7 @@
 
 .expereanceRightContentRow > p{
     color: #737373;
+    font-size: 20px;
 }
 .bold{
     color: black;
@@ -75,7 +76,7 @@
     .bold {
         color: black;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 20px;
     }
     .expereanceRightBlock{
         top: -110px;
@@ -92,7 +93,7 @@
         padding-bottom: 20px;
     }
     .expereanceRightTitle > h1{
-        font-size: 35px;
+        font-size: 40px;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -101,14 +102,30 @@
        height: 400px;
     }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 850px) {
+    .expereanceRightTitle > h1{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .expereanceRightTitle > h1{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .expereanceRightContentRow > p {
+        color: #737373;
+        font-size: 16px;
+    }
+    .bold{
+        font-size: 16px;
+    }
     .expereanceLeftBlock > img {
         width: 300px;
         height: 300px;
     }
     .expereanceRightContent{
         width: 350px;
-        height: 550px;
-        padding-top: 0;
+        height: fit-content;
+        padding-top: 10px;
     }
 }
