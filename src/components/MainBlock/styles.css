@@ -23,13 +23,13 @@
 .leftBlockContent > h1 {
     font-family: "Montserrat";
     font-weight: 700;
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 45px;
+    margin-bottom: 10px;
 }
 .leftBlockContent > p {
     width: 400px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     margin-bottom: 24px;
 }
@@ -80,23 +80,12 @@
     background-color: #FFA3C8;
 }
 @media screen and (max-width: 1450px) {
-
     .rightContent >img{
         width: 600px;
         height: 800px;
     }
 }
-@media screen and (max-width: 1392px) {
-    .leftBlockContent >h1{
-        font-size: 45px;
-        margin-bottom: 10px;
-    }
-}
-@media screen and (max-width: 1253px) {
-    .leftBlockContent >h1{
-        font-size: 35px;
-    }
-}
+
 @media screen and (max-width: 1200px) {
     .rightBlock{display: none;}
     .leftBlock {
@@ -112,11 +101,6 @@
     .leftBlockContent >h1{
         font-size: 45px;
     }
-    .leftBlockContent > p {
-        font-size: 20px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
     .webLinKsMobile{
         display: flex;
         margin-bottom: 10px;
@@ -129,16 +113,30 @@
         height: 60px;
     }
 }
-@media screen and (max-width: 460px) {
-    .leftBlockContent > img {
-        width: 300px;
-        height: 300px;
-    }
+@media screen and (max-width: 850px) {
     .leftBlockContent >h1{
-        font-size: 35px;
+        font-size: 40px;
     }
-    .webLinKsMobile > a >img{
+    .webLinKsMobile > a >img {
         width: 50px;
         height: 50px;
     }
+    .mainButton {
+        width: 300px;
+    }
 }
+@media screen and (max-width: 600px) {
+    .leftBlockContent > img {
+        width: 300px;
+        height: 300px;
+     }
+    .leftBlockContent >h1{
+        font-size: 35px;
+    }
+    .leftBlockContent > p {
+        width: 350px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
