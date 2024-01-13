@@ -1,0 +1,151 @@
+.reviews{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin:  50px 0;
+}
+.reviewstitleBLock{
+    display: flex ;
+    width: 100%;
+    height: 60px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviewstitleBLock >h1{
+    font-size: 40px;
+}
+
+
+.reviewsBlock{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+.reviewsCarowsel{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+    width: 1150px;
+    height: 710px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.reviewstiketBlock{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 100%;
+}
+
+
+
+.reviewstiketContent{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 500px;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+} 
+.reviewsImage{
+    width: 100%;
+}
+.reviewsImage > img{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.reviewsuserImage{
+    
+}
+.reviewsuserImage > img{
+    border-radius: 100%;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: -80px;
+}
+.reviewsText{
+    display: flex;
+    width: 305px;
+    height: 100%;
+    align-items: center;
+
+}
+.reviewsText > p{
+    position: relative;
+    top: -70px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 10px;
+
+}
+.reviewsuserButton{
+    background-color: #FBB1CF;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    width: 190px;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.reviewsCarowsel .slick-dots {
+    bottom: -40px !important;
+    z-index: 99999;
+}
+.reviewsCarowsel .slick-dots li.slick-active button:before {
+    color:  #ed74a4  !important;
+    opacity: 1;
+    font-size: 16px;
+}
+.reviewsCarowsel .slick-dots li button:before {
+    color: #ed74a4 !important;
+    opacity: .60;
+    font-size: 13px;
+}
+
+.slick-prev{
+    left: 0;
+}
+.slick-next{
+    right: 0;
+}
+
+.reviewsCarowsel .slick-prev,
+.reviewsCarowsel .slick-next {
+  width: 10%;
+  height: 50%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 0;
+  z-index: 1; 
+}
+.reviewsCarowsel .slick-prev:before,
+.reviewsCarowsel .slick-next:before{
+    color: transparent;
+}
+
+.reviewsCarowsel .slick-list{
+    overflow: visible;
+}
+

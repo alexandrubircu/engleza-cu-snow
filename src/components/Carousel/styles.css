@@ -37,20 +37,20 @@
     height: 800px;
 }
 
-.slick-dots {
+.phoneBlock .slick-dots {
     bottom: 40px !important;
     z-index: 99999;
 }
 
-.slick-dots li.slick-active button:after {
+.phoneBlock .slick-dots li.slick-active button:after {
     color: white !important;
 }
 
-.slick-dots li button:after {
+.phoneBlock .slick-dots li button:after {
     color: white !important;
 }
 
-.slick-dots li button::after {
+.phoneBlock .slick-dots li button::after {
     font-size: 12px;
 }
 
