@@ -37,20 +37,20 @@
     height: 800px;
 }
 
-.slick-dots {
+.phoneBlock .slick-dots {
     bottom: 40px !important;
     z-index: 99999;
 }
 
-.slick-dots li.slick-active button:after {
+.phoneBlock .slick-dots li.slick-active button:after {
     color: white !important;
 }
 
-.slick-dots li button:after {
+.phoneBlock .slick-dots li button:after {
     color: white !important;
 }
 
-.slick-dots li button::after {
+.phoneBlock .slick-dots li button::after {
     font-size: 12px;
 }
 
@@ -65,14 +65,17 @@
   font-size: 0;
   z-index: 1; 
 }
-
-
-.phoneBlock .slick-prev:after,
-.phoneBlock .slick-next:after {
-  font-size: 24px; 
-  color: #fff;
-}
-.phoneBlock .slick-prev:after,
-.phoneBlock .slick-next:after{
+.slick-prev:before,
+.slick-next:before{
     color: transparent;
+}
+.slick-dots li.slick-active button:before {
+    color:  #ffffff  !important;
+    opacity: 1;
+    font-size: 12px;
+}
+.slick-dots li button:before {
+    color: #4e4c4c !important;
+    opacity: .60;
+    font-size: 10px;
 }

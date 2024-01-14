@@ -66,6 +66,7 @@
     height: 570px;
     margin-left: 18px;
     border-radius: 100%;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (max-width: 1250px) {

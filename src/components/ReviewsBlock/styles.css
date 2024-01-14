@@ -1,0 +1,155 @@
+.reviews{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.reviewsContetn{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    width: 1150px;
+    height: fit-content;
+    align-items: center;
+
+}
+
+
+.reviewsTitle{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+.reviewsSliderview{
+    width: 1000px;
+    height: 580px;
+}
+.reviewsTiket{
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    height: 100%;
+}
+.reviewsTiketContent{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 6px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    width: 280px;
+    height: 500px;
+    margin: 20px 0;
+    align-items: center;
+    position: relative;
+
+}
+.reviewsTiketTopContent{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+
+}
+.reviewsTiketTopContent >img:first-child{
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.reviewsTiketTopContent >img:nth-child(2){
+    position: absolute;
+    border-radius: 50px;
+    box-shadow: 6px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    left: 32%;
+    top: -20px;
+    width: 100px;
+    height: 100px;
+}
+
+.reviewsTiketContent > p {
+    display: flex;
+    height: 400px;
+    padding:15px;
+    align-items: center;
+    font-size: 16px;
+    
+
+}
+.reviewsuserButton{
+    background-color: #FBB1CF;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 6px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    width: 190px;
+    height: 60px;
+    
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* setings slik */
+.reviewsSliderview .slick-dots {
+    bottom: -20px !important;
+    z-index: 99999;
+}
+.reviewsSliderview .slick-dots li.slick-active button:before {
+    color:  #ed74a4  !important;
+    opacity: 1;
+    font-size: 16px;
+}
+.reviewsSliderview .slick-dots li button:before {
+    color: #ed74a4 !important;
+    opacity: .60;
+    font-size: 13px;
+}
+
+
+
+.testbutton.next, .testbutton.prev {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 6px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    width: 50px;
+    height: 180px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 1;
+}
+ 
+  
+.testbutton.next > p, .testbutton.prev > p {
+    color: #ed74a4 ;
+    font-size: 40px;
+    font-weight: 700;
+    opacity: 0.5;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+  
+.testbutton.next:hover > p, .testbutton.prev:hover > p {
+    opacity: 0.8;
+}
+
+.reviewsSliderview .slick-prev {
+    left: -50px;
+}
+.reviewsSliderview .slick-next {
+    right: -50px;
+}
+.slick-next:before, .slick-prev:before {
+    display: none;
+}
