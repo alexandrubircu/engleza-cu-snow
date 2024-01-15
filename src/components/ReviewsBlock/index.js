@@ -1,54 +1,82 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 import './styles.css';
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import ReviewsIcon from '../../assets/images/reviewIcon.png'
 import reviewsuserImage from '../../assets/images/reviewsuserImage.png'
 
-function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={`testbutton next ${className}`}
-        style={{ ...style }}
-        onClick={onClick}
-      >
-        <p>&gt;</p>
-      </div>
-    );
-  }
-  
-  function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={`testbutton prev ${className}`}
-        style={{ ...style }}
-        onClick={onClick}
-      >
-        <p>&lt;</p>
-      </div>
-    );
-  }
-  
 const ReviewsBlock = () => {
+    const [slidesToShow, setSlidesToShow] = useState(3);
+    // eslint-disable-next-line
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            const newWindowWidth = window.innerWidth;
+            
+
+            if (newWindowWidth <= 1200 && newWindowWidth > 850) {
+                setSlidesToShow(2);
+            } else if (newWindowWidth <= 850) {
+                setSlidesToShow(1);
+            } else {
+                setSlidesToShow(3);
+            }
+
+            setWindowWidth(newWindowWidth);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     const settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: slidesToShow,
         slidesToScroll: 1,
         autoplay: false,
         speed: 1000,
         autoplaySpeed: 6000,
         adaptiveHeight: false,
-        nextArrow: <SampleNextArrow/>,
-        prevArrow: <SamplePrevArrow/>
-      };
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
+    };
+
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={`testbutton next ${className}`}
+                style={{ ...style }}
+                onClick={onClick}
+            >
+                <p>&gt;</p>
+            </div>
+        );
+    }
+
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={`testbutton prev ${className}`}
+                style={{ ...style }}
+                onClick={onClick}
+            >
+                <p>&lt;</p>
+            </div>
+        );
+    }
     return (
         <div className="reviews">
             <div className="reviewsContetn">
                 <div className="reviewsTitle"><h1>Recenzii</h1></div>
-                <div className="reviewsSlider">
                     <div className="reviewsSliderview">
                         <Slider {...settings}>
                             <div className="reviewsTiket">
@@ -129,10 +157,8 @@ const ReviewsBlock = () => {
                                     <Link to="/IndividualCourse"><button className="reviewsuserButton">CURSUL INDIVIDUAL</button></Link>
                                 </div>
                             </div>
-                            
                         </Slider>
                     </div>
-                </div>
             </div>
         </div>
     )
