@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-
+import React from "react";
 import './styles.css';
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
@@ -7,46 +6,39 @@ import ReviewsIcon from '../../assets/images/reviewIcon.png'
 import reviewsuserImage from '../../assets/images/reviewsuserImage.png'
 
 const ReviewsBlock = () => {
-    const [slidesToShow, setSlidesToShow] = useState(3);
-    // eslint-disable-next-line
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-
-    useEffect(() => {
-        const handleResize = () => {
-            const newWindowWidth = window.innerWidth;
-            
-
-            if (newWindowWidth <= 1200 && newWindowWidth > 850) {
-                setSlidesToShow(2);
-            } else if (newWindowWidth <= 850) {
-                setSlidesToShow(1);
-            } else {
-                setSlidesToShow(3);
-            }
-
-            setWindowWidth(newWindowWidth);
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
-
     const settings = {
         dots: true,
         infinite: true,
-        slidesToShow: slidesToShow,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: false,
         speed: 1000,
         autoplaySpeed: 6000,
         adaptiveHeight: false,
         nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 850,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                initialSlide: 1
+              }
+            }
+          ]
     };
+
+
 
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
