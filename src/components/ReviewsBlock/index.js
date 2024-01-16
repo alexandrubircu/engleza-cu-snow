@@ -38,13 +38,11 @@ const ReviewsBlock = () => {
           ]
     };
 
-
-
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
         return (
             <div
-                className={`testbutton next ${className}`}
+                className={`nextButton next ${className}`}
                 style={{ ...style }}
                 onClick={onClick}
             >
@@ -57,7 +55,7 @@ const ReviewsBlock = () => {
         const { className, style, onClick } = props;
         return (
             <div
-                className={`testbutton prev ${className}`}
+                className={`prevButton prev ${className}`}
                 style={{ ...style }}
                 onClick={onClick}
             >
