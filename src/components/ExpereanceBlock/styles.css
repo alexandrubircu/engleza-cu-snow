@@ -1,9 +1,10 @@
 .expereanceBlock{
     display: flex;
+    height: fit-content;
+    margin-bottom: 100px;
 }
 .expereanceLeftBlock{
     width: 50%;
-    margin: 150px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -64,14 +65,20 @@
     font-size: 20px;
 }
 @media screen and (max-width: 1200px) {
+
     .expereanceBlock{
         flex-direction: column;
         align-items: center;
+        margin-bottom: 100px;
+        position: relative;
+        justify-content: flex-start;
     }
     .expereanceLeftBlock{
         align-items: center;
         margin-right: 0;
         margin: 0;
+        height: 900px;
+        justify-content: flex-start;
     }
     .bold {
         color: black;
@@ -79,12 +86,14 @@
         font-size: 20px;
     }
     .expereanceRightBlock{
-        top: -110px;
-        position: relative;
+        top: 360px;
+        position: absolute;
         margin-left: 0;
         align-items: center;
+        justify-content: center;
     }
     .expereanceRightContent{
+       
         background-color: white;
         box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
@@ -108,6 +117,21 @@
     }
 }
 @media screen and (max-width: 600px) {
+
+    .expereanceLeftBlock{
+        align-items: center;
+        margin-right: 0;
+        margin: 0;
+        height: 750px;
+        justify-content: flex-start;
+    }
+
+    .expereanceRightBlock{
+        top: 240px;
+    }
+    .expereanceBlock{
+        margin-bottom: 50px;
+    }
     .expereanceRightTitle > h1{
         font-size: 30px;
         margin-bottom: 15px;
