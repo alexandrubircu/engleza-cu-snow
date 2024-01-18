@@ -25,7 +25,6 @@
 .whyBlockContentRowPink ,
 .whyBlockContentRowWhite ,
 .whyBlockContentRowYellow{
-    color: white;
     border-radius: 10px;
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -36,20 +35,20 @@
     align-items: center;
 }
 .whyBlockContentRowPink{
-    background-color: #FAAFCE;
+    background-color:  #FCD8E7;
 }
 .whyBlockContentRowWhite{
     background-color: white;
 }
 .whyBlockContentRowYellow{
-    background-color: #FEE14E;
+    background-color: #FEF1A8;
 }
 .whyBlocContentTextRow >h2{
     font-size: 22px;
     font-weight: 700;
 }
 .whyBlocContentTextRow >li{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 

@@ -15,7 +15,7 @@ const WhyBlock = () => {
                         </div>
                     </div>
                     <div className="whyBlockContentRowWhite">
-                        <div className="whyBlocContentTextRow" style={{color: "black"}}>
+                        <div className="whyBlocContentTextRow">
                             <h2>Descoperă oportunitatea cu Snow</h2>
                             <li>Cursurile de engleză transformă procesul de învățare într-o experiență deschisă și prietenoasă pentru toți cei dornici să-și dezvolte abilitățile lingvistice.</li>
                         </div>
@@ -27,7 +27,7 @@ const WhyBlock = () => {
                         </div> 
                     </div>
                     <div className="whyBlockContentRowWhite">
-                        <div className="whyBlocContentTextRow" style={{color: "black"}}>
+                        <div className="whyBlocContentTextRow">
                             <h2>Alege excelența alături de Snow</h2>
                             <li>Cursurile de engleză sunt create pentru a face învățarea limbii o călătorie captivantă și accesibilă, transformându-te în vorbitor fluent și sigur în sine.</li>
                         </div>
