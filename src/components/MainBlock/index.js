@@ -7,9 +7,7 @@ import mainInstagram from '../../assets/images/mainInstagram.png'
 import mainTiktok from '../../assets/images/mainTiktok.png'
 import mainYoutube from '../../assets/images/mainYoutube.png'
 
-
-
-const MainBlock = () => {
+const MainBlock = ({scrollToElement}) => {
     return (
         <div className="mainBlock" id="main">
             <div className="mainBlockContent">
@@ -26,7 +24,7 @@ const MainBlock = () => {
                             </div>
                         {/* mobile */}
                         <p>Profesoară de 14 ani cu peste 1 000 de studenți care deja vorbesc engleză cu mine și susțin examene internaționale și naționale.</p>
-                        <a href="#courses"><button className="mainButton"><p>Despre lecții</p></button></a>
+                        <button className="mainButton" onClick={scrollToElement}><p>Despre lecții</p></button>
                     </div>
                 </div>
                 <div className="rightBlock">

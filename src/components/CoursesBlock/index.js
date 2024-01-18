@@ -4,9 +4,9 @@ import gidImage from "../../assets/images/gidImage.png"
 import gidmobileImage from '../../assets/images/gidmobileImage.png'
 import { Link } from "react-router-dom";
 
-const CoursesBlock = () => {
+const CoursesBlock = ({targetElementRef}) => {
     return(
-        <div className="coursesBlock" id="courses">
+        <div className="coursesBlock" id="courses" ref={targetElementRef}>
             <div className="coursesTopBlock">
                 <h1>Invață Engleza cu <span className="snow">Snow</span></h1>
             </div>

@@ -1,8 +1,11 @@
-import React from "react";
+import React , {useEffect} from "react";
 import './styles.css';
 import Carousel from '../../components/Carousel'
 
 const ToeflCourse = () =>{
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return(
         <div className="toeflBlock">
             <div className="titleToeflBlock">

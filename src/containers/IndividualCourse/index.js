@@ -1,7 +1,10 @@
-import React from "react";
+import React , {useEffect} from "react";
 import './styles.css';
 import Carousel from '../../components/Carousel'
 const IndividualCourse = () =>{
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return(
         <div className="individualBlock">
         <div className="titleIndividualBlock">

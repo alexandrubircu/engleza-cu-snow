@@ -53,6 +53,9 @@
     font-size: 15px;
     font-weight: 500;
 }
-.centerFooterButton > a:hover img {
+.centerFooterButton > div{
+    cursor: pointer;
+}
+.centerFooterButton > div:hover img {
     transform: scale(1.1); 
 }
