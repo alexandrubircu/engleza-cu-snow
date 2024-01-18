@@ -69,8 +69,9 @@ const ReviewsBlock = () => {
                 <div className="reviewsTitle"><h1>Recenzii</h1></div>
                     <div className="reviewsSliderview">
                         <Slider {...settings}>
+
                             <div className="reviewsTiket">
-                                <div className="reviewsTiketContent">
+                                <div className="reviewsYellowTiketContent">
                                     <div className="reviewsTiketTopContent">
                                         <img src={ReviewsIcon} alt=''/>
                                         <img src={reviewsuserImage} alt=''/>
@@ -79,11 +80,11 @@ const ReviewsBlock = () => {
                                         Au fost 5 ore productive, care mi-au dezvoltat abilitätile de a scrie si intelege ce e cu adevarat important la sesiunea de bac. Datorita reperelor, sfaturilor si lucrurilor NOl spuse, sunt sigura că voi lua nota pe care mi-o doresc.
                                         Multumesc!
                                     </p>
-                                    <Link to="/CoursesA1-A2"><button className="reviewsuserButton">CoursesA1-A2</button></Link>
+                                    <Link to="/CoursesA1-A2"><button className="reviewsuserWhiteButton">CoursesA1-A2</button></Link>
                                 </div>
                             </div>
                             <div className="reviewsTiket">
-                                <div className="reviewsTiketContent">
+                                <div className="reviewsWhiteTiketContent">
                                     <div className="reviewsTiketTopContent">
                                         <img src={ReviewsIcon} alt=''/>
                                         <img src={reviewsuserImage} alt=''/>
@@ -92,11 +93,11 @@ const ReviewsBlock = () => {
                                         Au fost 5 ore productive, care mi-au dezvoltat abilitätile de a scrie si intelege ce e cu adevarat important la sesiunea de bac. Datorita reperelor, sfaturilor si lucrurilor NOl spuse, sunt sigura că voi lua nota pe care mi-o doresc.
                                         Multumesc!
                                     </p>
-                                    <Link to="/CoursesB1-B2"><button className="reviewsuserButton">CoursesB1-B2</button></Link>
+                                    <Link to="/CoursesA1-A2"><button className="reviewsuserPinkButton">CoursesA1-A2</button></Link>
                                 </div>
                             </div>
                             <div className="reviewsTiket">
-                                <div className="reviewsTiketContent">
+                                <div className="reviewsPinkTiketContent">
                                     <div className="reviewsTiketTopContent">
                                         <img src={ReviewsIcon} alt=''/>
                                         <img src={reviewsuserImage} alt=''/>
@@ -105,11 +106,11 @@ const ReviewsBlock = () => {
                                         Au fost 5 ore productive, care mi-au dezvoltat abilitätile de a scrie si intelege ce e cu adevarat important la sesiunea de bac. Datorita reperelor, sfaturilor si lucrurilor NOl spuse, sunt sigura că voi lua nota pe care mi-o doresc.
                                         Multumesc!
                                     </p>
-                                    <Link to="/CoursesC1-C2"><button className="reviewsuserButton">CoursesC1-C2</button></Link>
+                                    <Link to="/CoursesA1-A2"><button className="reviewsuserWhiteButton">CoursesA1-A2</button></Link>
                                 </div>
                             </div>
                             <div className="reviewsTiket">
-                                <div className="reviewsTiketContent">
+                                <div className="reviewsYellowTiketContent">
                                     <div className="reviewsTiketTopContent">
                                         <img src={ReviewsIcon} alt=''/>
                                         <img src={reviewsuserImage} alt=''/>
@@ -118,11 +119,11 @@ const ReviewsBlock = () => {
                                         Au fost 5 ore productive, care mi-au dezvoltat abilitätile de a scrie si intelege ce e cu adevarat important la sesiunea de bac. Datorita reperelor, sfaturilor si lucrurilor NOl spuse, sunt sigura că voi lua nota pe care mi-o doresc.
                                         Multumesc!
                                     </p>
-                                    <Link to="/ToeflCourse"><button className="reviewsuserButton">ToeflCourse</button></Link>
+                                    <Link to="/CoursesA1-A2"><button className="reviewsuserWhiteButton">CoursesA1-A2</button></Link>
                                 </div>
                             </div>
                             <div className="reviewsTiket">
-                                <div className="reviewsTiketContent">
+                                <div className="reviewsWhiteTiketContent">
                                     <div className="reviewsTiketTopContent">
                                         <img src={ReviewsIcon} alt=''/>
                                         <img src={reviewsuserImage} alt=''/>
@@ -131,11 +132,11 @@ const ReviewsBlock = () => {
                                         Au fost 5 ore productive, care mi-au dezvoltat abilitätile de a scrie si intelege ce e cu adevarat important la sesiunea de bac. Datorita reperelor, sfaturilor si lucrurilor NOl spuse, sunt sigura că voi lua nota pe care mi-o doresc.
                                         Multumesc!
                                     </p>
-                                    <Link to="/CambridgeCourse"><button className="reviewsuserButton">CambridgeCourse</button></Link>
+                                    <Link to="/CoursesA1-A2"><button className="reviewsuserPinkButton">CoursesA1-A2</button></Link>
                                 </div>
                             </div>
                             <div className="reviewsTiket">
-                                <div className="reviewsTiketContent">
+                                <div className="reviewsPinkTiketContent">
                                     <div className="reviewsTiketTopContent">
                                         <img src={ReviewsIcon} alt=''/>
                                         <img src={reviewsuserImage} alt=''/>
@@ -144,9 +145,10 @@ const ReviewsBlock = () => {
                                         Au fost 5 ore productive, care mi-au dezvoltat abilitätile de a scrie si intelege ce e cu adevarat important la sesiunea de bac. Datorita reperelor, sfaturilor si lucrurilor NOl spuse, sunt sigura că voi lua nota pe care mi-o doresc.
                                         Multumesc!
                                     </p>
-                                    <Link to="/IndividualCourse"><button className="reviewsuserButton">CURSUL INDIVIDUAL</button></Link>
+                                    <Link to="/CoursesA1-A2"><button className="reviewsuserWhiteButton">CoursesA1-A2</button></Link>
                                 </div>
                             </div>
+
                         </Slider>
                     </div>
             </div>

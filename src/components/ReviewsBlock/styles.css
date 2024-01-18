@@ -4,13 +4,13 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 .reviewsContetn{
     background-color: white;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
     width: 1150px;
     height: fit-content;
@@ -30,35 +30,38 @@
 
 .reviewsSliderview{
     width: 1000px;
-    height: 580px;
+    height: 500px;
 }
-.reviewsTiket{
 
+/* setings tiket */
+.reviewsTiket{
     display: flex !important;
     align-items: center;
     justify-content: center;
-    margin-left: 0px;
     height: 100%;
 }
-.reviewsTiketContent{
-    background-color: white;
+.reviewsTiket  p {
+    display: flex;
+    height: 300px;
+    padding:15px;
+    align-items: center;
+    font-size: 16px;
+}
+.reviewsTiket > div {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 6px 5px 15px 0px rgba(0, 0, 0, 0.15);
     width: 280px;
-    height: 500px;
+    height: 400px;
     margin: 20px 0;
     align-items: center;
     position: relative;
-
 }
 .reviewsTiketTopContent{
     display: flex;
-    background-color: white;
     border-radius: 10px;
     width: 100%;
-
 }
 .reviewsTiketTopContent >img:first-child{
     width: 25px;
@@ -75,33 +78,45 @@
     width: 100px;
     height: 100px;
 }
-
-.reviewsTiketContent > p {
-    display: flex;
-    height: 400px;
-    padding:15px;
-    align-items: center;
-    font-size: 16px;
-    
-
-}
-.reviewsuserButton{
-    background-color: #FBB1CF;
+.reviewsTiket  
+.reviewsuserWhiteButton,
+.reviewsuserPinkButton {
     border-radius: 10px;
     border: none;
     box-shadow: 6px 5px 15px 0px rgba(0, 0, 0, 0.15);
     width: 190px;
     height: 60px;
-    
-    color: white;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 30px;
+    
 }
+
+/* vizual tiket */
+.reviewsYellowTiketContent{
+    background-color: rgba(254, 228, 64, 0.5);
+}
+.reviewsWhiteTiketContent{
+    background-color: white;
+}
+.reviewsPinkTiketContent{
+    background-color:  rgba(251, 177, 207, 0.5);
+}
+
+.reviewsuserWhiteButton{
+    background-color: white;
+}
+.reviewsuserPinkButton{
+    background-color: #FBB1CF;
+    color: white;
+}
+
+
+
 
 /* setings slik */
 .reviewsSliderview .slick-dots {
-    bottom: -20px !important;
+    bottom: -40px !important;
     z-index: 99999;
 }
 .reviewsSliderview .slick-dots li.slick-active button:before {
@@ -156,7 +171,11 @@
     display: none;
 }
 
-@media screen and (max-width: 1200px) {
+
+
+
+
+/* @media screen and (max-width: 1200px) {
     .reviewsSliderview {
         width: 80%; 
         margin: 0 auto; 
@@ -217,4 +236,4 @@
     .nextButton.next > p, .prevButton.prev > p {
         font-size: 30px;
     }
-}
+} */
