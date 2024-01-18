@@ -27,9 +27,9 @@
     font-size: 40px;
 }
 
-
+/* tut */
 .reviewsSliderview{
-    width: 1000px;
+    width: 1080px;
     height: 500px;
 }
 
@@ -40,12 +40,15 @@
     justify-content: center;
     height: 100%;
 }
-.reviewsTiket  p {
-    display: flex;
+
+.reviewsTiket p {  
+    hyphens: auto;
+    white-space: normal;
     height: 300px;
-    padding:15px;
-    align-items: center;
+    padding: 0 25px;
+    padding-top: 55px;
     font-size: 16px;
+    font-weight: 500;
 }
 .reviewsTiket > div {
     display: flex;
@@ -162,10 +165,10 @@
 }
 
 .reviewsSliderview .slick-prev {
-    left: -50px;
+    left: -20px;
 }
 .reviewsSliderview .slick-next {
-    right: -50px;
+    right: -20px;
 }
 .slick-next:before, .slick-prev:before {
     display: none;
@@ -175,16 +178,84 @@
 
 
 
-/* @media screen and (max-width: 1200px) {
+ @media screen and (max-width: 1200px) {
     .reviewsSliderview {
         width: 80%; 
+        margin: 0 auto; 
+    }
+    .reviewsSliderview {
+        width: 780px; 
         margin: 0 auto; 
     }
     .reviewsContetn{
         width: 800px;
     }
+    .reviewsSliderview .slick-prev {
+        left: -3px;
+    }
+    .reviewsSliderview .slick-next {
+        right: -3px;
+    }
+
 }
+
 @media screen and (max-width: 850px) {
+    .reviewsTitle > h1{
+        font-size: 35px;
+    }
+    .reviewsSliderview {
+        width: 550px; 
+        margin: 0 auto; 
+    }
+    .reviewsContetn{
+        width: 550px;
+    }
+    .reviewsSliderview .slick-prev {
+        left: 30px;
+    }
+    .reviewsSliderview .slick-next {
+        right: 30px;
+    }
+   
+}
+
+
+@media screen and (max-width: 600px) {
+    .reviewsTitle > h1{
+        font-size: 30px;
+    }
+    .reviewsSliderview {
+        width: 380px; 
+        margin: 0 auto; 
+    }
+    .reviewsContetn{
+        width: 380px;
+    }
+    .reviewsTiket > div {
+        width: 250px;
+    }
+
+
+    .reviewsSliderview .slick-prev {
+        left: 10px;
+    }
+    .reviewsSliderview .slick-next {
+        right: 10px;
+    }
+    .nextButton.next, .prevButton.prev {
+        width: 45px;
+        height: 150px;
+    }
+    .nextButton.next > p, .prevButton.prev > p {
+        font-size: 30px;
+    }
+   
+   
+ }
+
+
+
+/* @media screen and (max-width: 850px) {
     .reviewsTitle > h1{
         font-size: 35px;
     }
@@ -195,8 +266,11 @@
     .reviewsContetn{
         width: 550px;
     }
-}
-@media screen and (max-width: 600px) {
+} */
+
+ 
+
+/* @media screen and (max-width: 600px) {
     .reviewsTitle > h1{
         font-size: 30px;
     }
@@ -216,8 +290,13 @@
     .reviewsTiketContent {
         height: 400px;
     }
-}
-@media screen and (max-width: 500px) {
+} */
+
+
+
+
+
+/* @media screen and (max-width: 500px) {
    
     .reviewsContetn{
         width: 95%;
@@ -236,4 +315,4 @@
     .nextButton.next > p, .prevButton.prev > p {
         font-size: 30px;
     }
-} */
+}  */
