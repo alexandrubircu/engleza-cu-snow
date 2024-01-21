@@ -37,7 +37,6 @@ const MainBlock = ({scrollToElement}) => {
                 </div>
                 <div className="mainTextBlock">
                     <div className="avatarMbileBlock">
-                        <video ref={videoEl} onEnded={() => setShowBlock(0)} style={showBlock ? {transform: 'scale(1)'} : {transform: "scale(0)"}} src={mainVideo}></video>
                         <img src={mainAvatar} alt=''/>
                     </div>
                     <h1>Invață<br/>Engleza cu <span className="snow">Snow</span></h1>
