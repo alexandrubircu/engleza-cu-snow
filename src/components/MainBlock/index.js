@@ -29,19 +29,13 @@ const MainBlock = ({scrollToElement}) => {
                     <video ref={videoEl} onEnded={() => setShowBlock(0)} style={showBlock ? {transform: 'scale(1)'} : {transform: "scale(0)"}} src={mainVideo}></video>
                     <img src={mainImage} alt=''/>
                 </div>
-                <div className="mainWebLinKs">
-                    <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainFaceboock} alt=''/></a>
-                    <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainInstagram} alt=''/></a>
-                    <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainTiktok} alt=''/></a>
-                    <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainYoutube} alt=''/></a>
-                </div>
                 <div className="mainTextBlock">
                     <div className="avatarMbileBlock">
                         <img src={mainAvatar} alt=''/>
                     </div>
                     <h1>Invață<br/>Engleza cu <span className="snow">Snow</span></h1>
-                    <p>Deschideți ușa spre cunoaștere! Împreună <br/> cu Snow, fiecare lecție devine o aventură în <br/> lumea englezei. Apăsați butonul de mai jos <br/>și începeți călătoria voastră.</p>
-                    <div className="mainWebLinKsMobilever">
+                    <p>Deschideți ușa spre cunoaștere! Împreună cu Snow, fiecare lecție devine o aventură în lumea englezei. Apăsați butonul de mai jos și începeți călătoria voastră.</p>
+                    <div className="mainWebLinKs">
                         <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainFaceboock} alt=''/></a>
                         <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainInstagram} alt=''/></a>
                         <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainTiktok} alt=''/></a>

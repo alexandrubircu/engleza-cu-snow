@@ -47,13 +47,12 @@
     font-size: 22px;
     font-weight: 700;
 }
-.whyBlocContentTextRow >li{
+.whyBlocContentTextRow >p{
+    margin-top: 5px;
+    text-indent: 20px;
     font-size: 18px;
     font-weight: 500;
 }
-
-
-
 .WhyblockRight{
     display: flex;
     width: 50%;
@@ -122,7 +121,7 @@
         font-size: 20px;
         font-weight: 700;
     }
-    .whyBlocContentTextRow >li{
+    .whyBlocContentTextRow > p{
         font-size: 16px;
         font-weight: 500;
     }
