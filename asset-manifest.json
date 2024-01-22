@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/engleza-cu-snow/static/css/main.3f18abe6.css",
-    "main.js": "/engleza-cu-snow/static/js/main.f8b36e21.js",
+    "main.css": "/engleza-cu-snow/static/css/main.5616e49b.css",
+    "main.js": "/engleza-cu-snow/static/js/main.24f24ab2.js",
     "static/js/787.2e96b0b8.chunk.js": "/engleza-cu-snow/static/js/787.2e96b0b8.chunk.js",
     "static/media/mainVideo.MOV": "/engleza-cu-snow/static/media/mainVideo.667088aebb241cb9267d.MOV",
     "static/media/expereanceImage.png": "/engleza-cu-snow/static/media/expereanceImage.032daad9f2dab9a0a29b.png",
@@ -28,12 +28,12 @@
     "static/media/reviewsuserImage.png": "/engleza-cu-snow/static/media/reviewsuserImage.f93109ccaf6090e65a5f.png",
     "static/media/emojiEyes.svg": "/engleza-cu-snow/static/media/emojiEyes.ca739098ae34ecabcda29667452e98d6.svg",
     "index.html": "/engleza-cu-snow/index.html",
-    "main.3f18abe6.css.map": "/engleza-cu-snow/static/css/main.3f18abe6.css.map",
-    "main.f8b36e21.js.map": "/engleza-cu-snow/static/js/main.f8b36e21.js.map",
+    "main.5616e49b.css.map": "/engleza-cu-snow/static/css/main.5616e49b.css.map",
+    "main.24f24ab2.js.map": "/engleza-cu-snow/static/js/main.24f24ab2.js.map",
     "787.2e96b0b8.chunk.js.map": "/engleza-cu-snow/static/js/787.2e96b0b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f18abe6.css",
-    "static/js/main.f8b36e21.js"
+    "static/css/main.5616e49b.css",
+    "static/js/main.24f24ab2.js"
   ]
 }
