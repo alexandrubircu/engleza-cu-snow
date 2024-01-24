@@ -9,7 +9,6 @@
 }
 .reviewsContetn{
     background: linear-gradient(180deg, #FEF1A8 0%, #FCD8E7 99.99%, rgba(217, 217, 217, 0.00) 100%);
-
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -140,6 +139,10 @@
 .nextButton.next:hover > p, .prevButton.prev:hover > p {
     opacity: 0.8;
 }
+.nextButton.next:active, .prevButton.prev:active {
+    background-color: #FFF5B9;  
+}
+
 
 .reviewsSliderview .slick-prev {
     left: -50px;
@@ -150,15 +153,6 @@
 .slick-next:before, .slick-prev:before {
     display: none;
 }
-
-
-
-
-
-
-
-
-
 
  @media screen and (max-width: 1200px) {
     .reviewsSliderview {

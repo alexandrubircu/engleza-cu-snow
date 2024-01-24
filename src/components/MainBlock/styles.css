@@ -52,6 +52,9 @@
     display: flex;
     flex-direction: row;
 }
+.mainWebLinKs > a:active{
+    transform: scale(1.1);
+}
 .link , .link > img{
     display: flex;
     width: 55px;
@@ -81,6 +84,9 @@
     font-weight: 600;
     margin-bottom: 25px;
 }
+.mainButtonCourses:active{
+    background-color: #FFA3C8;
+}
 .mainButtonVideo{
     background-color: white;
     position: relative;
@@ -105,6 +111,9 @@
     right: 50px;
     width: 50px;
     height: 60px;
+}
+.mainButtonVideo:active{
+    background-color: #FFF5B9;  
 }
 @media screen and (max-width: 1200px) {
     

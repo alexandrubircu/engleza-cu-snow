@@ -60,28 +60,36 @@
     transform: scale(1.1); 
 }
 .leftFooterLinks img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 }
 .rightFooterLinks img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 }
 .centerFooterButton  img{
     width: 55px;
     height: 55px;
 }
+
+.centerFooterButton > div:active, 
+.rightFooterLinks > a:active, 
+.leftFooterLinks > a:active{
+    transform: scale(1.1);
+}
+
 @media screen and (max-width: 850px) {
     .leftFooterLinks img {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
     .rightFooterLinks img {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
     .centerFooterButton  img{
         width: 55px;
         height: 55px;
     }
 }
+
