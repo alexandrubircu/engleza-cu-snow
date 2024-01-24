@@ -23,7 +23,7 @@ function App() {
   return (
     <div className='mainWrapper'>
       <MainBlock scrollToElement={scrollToElement}/>
-      {/* <ExpereanceBlock/> */}
+      <ExpereanceBlock/>
       <CoursesBlock targetElementRef={targetElementRef}/>
       <WhyBlock/>
       <ReviewsBlock/>

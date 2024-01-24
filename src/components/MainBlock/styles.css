@@ -20,6 +20,7 @@
     width: 510px;
     height: 765px;
     border-radius: 32px;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
 }
 .mainBlockContent .imgBlock > video{
     width: 510px;

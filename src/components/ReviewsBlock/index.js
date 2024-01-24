@@ -1,7 +1,6 @@
 import React from "react";
 import './styles.css';
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
 import ReviewsIcon from '../../assets/images/reviewIcon.png'
 import reviewsuserImage from '../../assets/images/reviewsuserImage.png'
 
@@ -150,6 +149,3 @@ const ReviewsBlock = () => {
     )
 }
 export default ReviewsBlock
-
-
-

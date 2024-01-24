@@ -45,7 +45,7 @@ const MainBlock = ({scrollToElement}) => {
                         <button className="mainButtonCourses" onClick={scrollToElement}>Descopera Cursurile</button>
                         <button className="mainButtonVideo" onClick={() => setShowBlock(!showBlock)}>
                             <p>{showBlock ? "Inchide" : "Apasama!"}</p>
-                            <img src={emojiEyes}/>
+                            <img src={emojiEyes} alt=''/>
                         </button>
                     </div>
                 </div>

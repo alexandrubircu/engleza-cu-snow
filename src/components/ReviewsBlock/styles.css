@@ -1,3 +1,4 @@
+
 .reviews{
     display: flex;
     width: 100%;
@@ -7,7 +8,8 @@
     margin-bottom: 50px;
 }
 .reviewsContetn{
-    background-color: white;
+    background: linear-gradient(180deg, #FEF1A8 0%, #FCD8E7 99.99%, rgba(217, 217, 217, 0.00) 100%);
+
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -28,8 +30,8 @@
 }
 
 .reviewsSliderview{
-    width: 1080px;
-    height: 400px;
+    width: 1005px;
+    height: 375px;
 }
 
 .reviewsTiket{
@@ -42,9 +44,9 @@
 .reviewsTiket p {  
     hyphens: auto;
     white-space: normal;
-    height: 300px;
+    height: 250px;
     padding: 0 25px;
-    padding-top: 55px;
+    padding-top: 40px;
     font-size: 16px;
     font-weight: 500;
 }
@@ -81,7 +83,7 @@
 }
 
 
-/* vizual tiket */
+
 .reviewsYellowTiketContent{
     background-color: rgba(254, 228, 64, 0.5);
 }
@@ -92,9 +94,9 @@
     background-color:  rgba(251, 177, 207, 0.5);
 }
 
-/* setings slik */
+
 .reviewsSliderview .slick-dots {
-    bottom: -40px !important;
+    bottom: -20px !important;
     z-index: 99999;
 }
 .reviewsSliderview .slick-dots li.slick-active button:before {
@@ -140,14 +142,19 @@
 }
 
 .reviewsSliderview .slick-prev {
-    left: -20px;
+    left: -50px;
 }
 .reviewsSliderview .slick-next {
-    right: -20px;
+    right: -50px;
 }
 .slick-next:before, .slick-prev:before {
     display: none;
 }
+
+
+
+
+
 
 
 
@@ -159,19 +166,12 @@
         margin: 0 auto; 
     }
     .reviewsSliderview {
-        width: 780px; 
+        width: 660px; 
         margin: 0 auto; 
     }
     .reviewsContetn{
         width: 800px;
     }
-    .reviewsSliderview .slick-prev {
-        left: -3px;
-    }
-    .reviewsSliderview .slick-next {
-        right: -3px;
-    }
-
 }
 
 @media screen and (max-width: 850px) {
@@ -179,17 +179,17 @@
         font-size: 35px;
     }
     .reviewsSliderview {
-        width: 550px; 
+        width: 450px; 
         margin: 0 auto; 
     }
     .reviewsContetn{
-        width: 550px;
+        width: 450px;
     }
     .reviewsSliderview .slick-prev {
-        left: 30px;
+        left: 15px;
     }
     .reviewsSliderview .slick-next {
-        right: 30px;
+        right: 15px;
     }
    
 }
@@ -226,4 +226,4 @@
     }
    
    
- }
+ } 

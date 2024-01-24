@@ -17,11 +17,11 @@ const Footer = () => {
         <div className="footerBlock">
             <div className="topFooterBlock">
                 <div className="leftFooterLinks">
-                    <a href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer"><img src={footerfacebookImage} alt='' width={25} height={25}/></a>  
-                    <a href="https://www.instagram.com/english_with_snow/" target="_blank" rel="noreferrer"><img src={footerinstagramImage} alt='' width={25} height={25}/></a>
+                    <a href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer"><img src={footerfacebookImage} alt=''/></a>  
+                    <a href="https://www.instagram.com/english_with_snow/" target="_blank" rel="noreferrer"><img src={footerinstagramImage} alt=''/></a>
                 </div>
                 <div className="centerFooterButton">
-                    <div onClick={scrollToTop}><img src={footerbuttonImage} alt='' width={40} height={40}/></div>
+                    <div onClick={scrollToTop}><img src={footerbuttonImage} alt=''/></div>
                 </div>
                 <div className="rightFooterLinks">
                     <a href="https://www.tiktok.com/@engleza_cu_snow" target="_blank" rel="noreferrer"><img src={footertiktokImage} alt='' width={25} height={25}/></a>

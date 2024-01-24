@@ -1,9 +1,9 @@
 .footerBlock{
-    background-color: black;
+    background: linear-gradient(91deg, #FEEFAD 0%, #FCD8E7 99.92%, rgba(255, 255, 255, 0.00) 100%);
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 70px;
+    height: 100px;
 }
 .topFooterBlock{
     display: flex;
@@ -58,4 +58,30 @@
 }
 .centerFooterButton > div:hover img {
     transform: scale(1.1); 
+}
+.leftFooterLinks img {
+    width: 30px;
+    height: 30px;
+}
+.rightFooterLinks img {
+    width: 30px;
+    height: 30px;
+}
+.centerFooterButton  img{
+    width: 55px;
+    height: 55px;
+}
+@media screen and (max-width: 850px) {
+    .leftFooterLinks img {
+        width: 25px;
+        height: 25px;
+    }
+    .rightFooterLinks img {
+        width: 25px;
+        height: 25px;
+    }
+    .centerFooterButton  img{
+        width: 55px;
+        height: 55px;
+    }
 }

@@ -1,155 +1,137 @@
 .expereanceBlock{
-    display: flex;
+    width: 100%;
     height: fit-content;
+    display: flex;
+    justify-content: center;
     margin-bottom: 100px;
 }
-.expereanceLeftBlock{
-    width: 50%;
+
+.expereanceContent{
+    width: fit-content;
+    height: fit-content;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    margin-right: 5%;
+    flex-direction: row;
+
 }
-.expereanceLeftBlock > img{
-    border-radius: 50%;
+.expereanceContent > img{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
-    
-}
-
-.expereanceRightBlock{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-.expereanceRightContent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.expereanceRightContentColum{
+    margin-right: 140px;
     position: relative;
+    top: 40px;
 }
-
-.expereanceRightTitle > h1{
-    font-size: 40px;
-    margin-left: 75px;
-    margin-bottom: 25px;
-}
-.expereanceRightContentColum > img{
-    width: 2px;
-    height: calc(100% - 63px);
-    position: absolute;
-    left: 60px;
-}
-.expereanceRightContentRow{
+.expereanceTextBlock{
+    background: linear-gradient(180deg, #FEF1A8 0%, #FCD8E7 99.99%, rgba(217, 217, 217, 0.00) 100%);
+    border-radius: 32px;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: fit-content;
+    position: relative;
+
+}
+.expereanceTextBlock > img{
+    width: 4px;
+    height: 460px;
+    top: 85px;
+    left: 85px;
+    position: absolute;
+}
+.expereanceTextBlock > h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.expereanceTextRow{
+    display: flex;
+    flex-direction: row;
     margin-bottom: 10px;
+    align-items: center;
 }
-
-.expereanceRightContentRow > img{
-    border-radius: 50%;
-    margin-right: 25px;
+.expereanceTextRow > img{
+    width: 50px;
+    height: 50px;
+    margin-right: 35px;
 }
-
-.expereanceRightContentRow > p{
-    color: #737373;
-    font-size: 20px;
+.expereanceTextRow > p{
+    font-size: 18px;
+    font-weight: 500;
 }
-.bold{
-    color: black;
+.expereanceTextRow  span{
+    font-size: 22px;
     font-weight: 700;
-    font-size: 20px;
 }
 @media screen and (max-width: 1200px) {
+    .expereanceContent > img{
+        width: 400px;
+        height: 400px;
+        margin-right: 20px;
+    }
+    .expereanceTextBlock{
+        width: 395px;
+    }
+    .expereanceTextBlock > img{
+        height: 485px;
+    }
+}
 
-    .expereanceBlock{
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 100px;
-        position: relative;
-        justify-content: flex-start;
-    }
-    .expereanceLeftBlock{
-        align-items: center;
-        margin-right: 0;
-        margin: 0;
-        height: 900px;
-        justify-content: flex-start;
-    }
-    .bold {
-        color: black;
-        font-weight: 700;
-        font-size: 20px;
-    }
-    .expereanceRightBlock{
-        top: 360px;
-        position: absolute;
-        margin-left: 0;
-        align-items: center;
-        justify-content: center;
-    }
-    .expereanceRightContent{
-       
-        background-color: white;
-        box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
-        border-radius: 10px;
-        padding: 0 20px;
-        padding-top: 30px;
-        padding-bottom: 20px;
-    }
-    .expereanceRightTitle > h1{
-        font-size: 40px;
-    }
-}
-@media screen and (max-width: 1024px) {
-    .expereanceLeftBlock > img{
-       width: 400px;
-       height: 400px;
-    }
-}
+
+
 @media screen and (max-width: 850px) {
-    .expereanceRightTitle > h1{
+    .expereanceTextBlock > h1{
         font-size: 35px;
     }
+    .expereanceContent{
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 250px;
+    }
+    .expereanceContent > img{
+        margin-right: 0;
+        position: absolute;
+        top: -250px;
+    }
+    .expereanceTextBlock{
+        width: 490px;
+    }
+    .expereanceTextBlock > img{
+        height: 455px;
+    }
+
 }
 @media screen and (max-width: 600px) {
-
-    .expereanceLeftBlock{
-        align-items: center;
-        margin-right: 0;
-        margin: 0;
-        height: 750px;
-        justify-content: flex-start;
-    }
-
-    .expereanceRightBlock{
-        top: 240px;
-    }
-    .expereanceBlock{
-        margin-bottom: 50px;
-    }
-    .expereanceRightTitle > h1{
+    .expereanceBlock{margin-bottom: 50px;}
+    .expereanceTextBlock > h1{
         font-size: 30px;
-        margin-bottom: 15px;
     }
-    .expereanceRightContentRow > p {
-        color: #737373;
+    .expereanceTextRow > p{
         font-size: 16px;
     }
-    .bold{
-        font-size: 16px;
+    .expereanceTextRow  span{
+        font-size: 20px;
     }
-    .expereanceLeftBlock > img {
-        width: 300px;
-        height: 300px;
+    .expereanceContent{
+        margin-top: 220px;
     }
-    .expereanceRightContent{
+    .expereanceTextBlock{
+        width: 390px;
+    }
+    .expereanceContent > img{
         width: 350px;
-        height: fit-content;
-        padding-top: 10px;
+        height: 350px;
+        top: -220px;
     }
+    .expereanceTextBlock > img{
+        top: 75px;
+        height: 465px;
+    }
+
 }
+
