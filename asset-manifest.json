@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/engleza-cu-snow/static/css/main.5616e49b.css",
-    "main.js": "/engleza-cu-snow/static/js/main.24f24ab2.js",
+    "main.css": "/engleza-cu-snow/static/css/main.bff65666.css",
+    "main.js": "/engleza-cu-snow/static/js/main.c35f6216.js",
     "static/js/787.2e96b0b8.chunk.js": "/engleza-cu-snow/static/js/787.2e96b0b8.chunk.js",
     "static/media/mainVideo.MOV": "/engleza-cu-snow/static/media/mainVideo.667088aebb241cb9267d.MOV",
     "static/media/expereanceImage.png": "/engleza-cu-snow/static/media/expereanceImage.032daad9f2dab9a0a29b.png",
@@ -18,7 +18,6 @@
     "static/media/B1.1Image.png": "/engleza-cu-snow/static/media/B1.1Image.dc2be27ccdbafa15efaa.png",
     "static/media/boockPage5.png": "/engleza-cu-snow/static/media/boockPage5.1522219e86d101e06ad8.png",
     "static/media/feedback1.png": "/engleza-cu-snow/static/media/feedback1.28843d23b52a98a43905.png",
-    "static/media/mainPageBackground.png": "/engleza-cu-snow/static/media/mainPageBackground.bfddec48bfefae609c7e.png",
     "static/media/feedback4.png": "/engleza-cu-snow/static/media/feedback4.0802d98ab9e4b13b9503.png",
     "static/media/feedback3.png": "/engleza-cu-snow/static/media/feedback3.a76cb6871fdc158b4f68.png",
     "static/media/coursebackgroundImage.png": "/engleza-cu-snow/static/media/coursebackgroundImage.5ec90ec69552a7544997.png",
@@ -28,12 +27,12 @@
     "static/media/reviewsuserImage.png": "/engleza-cu-snow/static/media/reviewsuserImage.f93109ccaf6090e65a5f.png",
     "static/media/emojiEyes.svg": "/engleza-cu-snow/static/media/emojiEyes.ca739098ae34ecabcda29667452e98d6.svg",
     "index.html": "/engleza-cu-snow/index.html",
-    "main.5616e49b.css.map": "/engleza-cu-snow/static/css/main.5616e49b.css.map",
-    "main.24f24ab2.js.map": "/engleza-cu-snow/static/js/main.24f24ab2.js.map",
+    "main.bff65666.css.map": "/engleza-cu-snow/static/css/main.bff65666.css.map",
+    "main.c35f6216.js.map": "/engleza-cu-snow/static/js/main.c35f6216.js.map",
     "787.2e96b0b8.chunk.js.map": "/engleza-cu-snow/static/js/787.2e96b0b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5616e49b.css",
-    "static/js/main.24f24ab2.js"
+    "static/css/main.bff65666.css",
+    "static/js/main.c35f6216.js"
   ]
 }
