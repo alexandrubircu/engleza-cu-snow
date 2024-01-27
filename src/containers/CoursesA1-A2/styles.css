@@ -1,279 +1,154 @@
-.A1_A2wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    height: 100%;
-}
-.A1_A2Block{
+.coursesA1A2{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-image: url('../../assets/images/coursebackgroundImage.png');
-    background-size: cover;
-    background-repeat: no-repeat;
     align-items: center;
 }
-.A1_A2titleBlock{
-    display: flex;
-    width: 100%;
-    height: 10%;
-    align-items: center;
-    justify-content: center;
-}
-.A1_A2titleBlock > p{
+.coursesA1A2 > h1{
     font-size: 40px;
     font-weight: 700;
+    margin: 20px 0;
 }
-.A1_A2{
+.coursesA1A2 span{
     color: #A5D3FD;
 }
-.A1_A2coursesBlock{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.A1_A2YelowTicket ,
-.A1_A2WhiteTicket{
-    border-radius: 10px;
-    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 300px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-between;
-}
-.A1_A2YelowTicket{
-    background-color: #FEE440;
-}
-.A1_A2YelowTicket > h2{
-    color: white;
-}
-.A1_A2YelowTicket > p{
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
-}
-.A1_A2YelowTicket > p:not(:nth-child(4)){
-    color: black;
-}
-.A1_A2WhiteTicket{
-    background-color: white;
-}
-.A1_A2WhiteTicket > p{
-    font-size: 20px;
-    font-weight: 700;
-}
-.A1_A2TiketButton{
-    display: flex;
+.coursesA1A2Content{
     flex-direction: column;
     width: fit-content;
     height: fit-content;
-    margin-top: 5px;
-    justify-content: center;
+    margin-top: 20px;
 }
-.A1_A2ButtonWhite, 
-.A1_A2ButtonPink{
-    border-radius: 10px;
-    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
-    border: none;
-    width: 220px;
-    height: 65px;
-    font-size: 22px;
-    font-weight: 700;
-}
-.A1_A2ButtonMore{
-    background: none;
-    border-radius: 50px;
-    border: none ;
+.coursesA1A2Ticket{
     display: flex;
+    flex-direction: row;
+}
+.coursesA1A2YellowTicket,
+.coursesA1A2WhiteTicket{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    margin: 0 15px;
+    padding: 15px;
     align-items: center;
-    justify-content: center;
 }
-.A1_A2ButtonMore > img{
+.coursesA1A2YellowTicket{background-color: #FEE440;}
+.coursesA1A2WhiteTicket{background-color: white;}
+
+.coursesA1A2YellowTicket > h2,
+.coursesA1A2WhiteTicket > h2{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.coursesA1A2YellowTicket > p,
+.coursesA1A2WhiteTicket > p{
+    font-size: 22px;
+    font-weight: 600;
+}
+.coursesA1A2YellowTicket > p:nth-last-child(2),
+.coursesA1A2WhiteTicket > p:nth-last-child(2){
+  margin-top: 10px;
+}
+
+.coursesA1A2YellowTicket >p:nth-last-child(2){
+    color: white;
+}
+
+
+/* bittons */
+.A1_A2TiketButton{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin-top: 5px;
-    width: 50px;
-    height: 50px;
+    align-items: center;
 }
-.A1_A2ButtonWhite{
+
+
+.coursesA1A2ButtonWhite,
+.coursesA1A2ButtonPink{
     background-color: white;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    width: 210px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
 }
-.A1_A2ButtonPink{
+.coursesA1A2ButtonPink{
     background-color: #FCB0CF;
     color: white;
 }
-.A1_A2infoCoursesBlock{
-    margin: 20px 10px 0px 10px;
-    border-radius: 10px;
+.coursesA1A2ButtonPink:active,
+.coursesA1A2ButtonWhite:active{
+    transform: scale(1.1);
+}
+
+.coursesA1A2ButtonMore{
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
-    background-color: white;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: none;
+    background-color: transparent;
+    margin-top: 15px;
+}
+.coursesA1A2ButtonMore > img{
+    width: 60px;
+    height: 60px;
+}
+
+/* infoblock */
+.A1_A2infoCoursesBlock{
+    background: linear-gradient(180deg, #FEF1A8 0%, #FCD8E7 99.99%, rgba(217, 217, 217, 0.00) 100%);
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    width: 97.7%;
+    height: 400px;
+    border-radius: 20px;
+    margin: 15px;
 }
 .A1_A2infoCoursesBlock > img{
     width: 400px;
-    height: 400px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-.A1_A2Text{
-    display: flex;
-    align-items: center;
-    width: 100%;
     height: 100%;
-    margin-left: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 2px solid #000;
 }
-.A1_A2Text > p{
-    font-size: 20px;
-    font-weight: 500;
+.A1_A2infoContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
-.A1_A2Title {
+.A1_A2infoTitle{
     background-color: #FEE440;
     position: absolute;
-    width: fit-content;
-    padding: 10px 26px;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
     border-bottom-right-radius: 10px;
 }
-.A1_A2Title > p{
+.A1_A2infoTitle > p{
     font-size: 25px;
     font-weight: 700;
 }
-
-@media screen and (max-width: 1300px) {
-    .A1_A2YelowTicket, 
-    .A1_A2WhiteTicket {
-        width: 250px;
-        height: 250px;
-    }
+.A1_A2infoText{
+    width: 800px;
+    margin-left: 30px;
 }
-
-@media screen and (max-width: 1100px) {
-    .A1_A2wrapper{
-        justify-content: center;
-    }
-    .A1_A2ButtonMore {
-        transform: rotate(-90deg);
-    }
-    .A1_A2titleBlock {
-        height: 6%;
-    }
-    .A1_A2_ContentBlock{
-        display: flex;
-        flex-direction: row;
-        width: fit-content;
-        height: fit-content;
-    }
-    .A1_A2coursesBlock {
-        width: fit-content;
-        flex-direction: column; 
-    }
-    .A1_A2YelowTicket, 
-    .A1_A2WhiteTicket {
-        width: 200px;
-        height: 200px;
-        margin: 5px 0;
-        padding: 15px;
-    }
-    .A1_A2TiketButton{
-        flex-direction: row;
-        justify-content: center;
-    }
-    .A1_A2ButtonWhite,
-    .A1_A2ButtonPink{
-        font-size: 15px;
-        width: 120px;
-        height: 50px;
-    }
-    .A1_A2ButtonMore > img{
-        width: 50px;
-        height: 50px;
-        margin: 0 9px;
-    }
-    .A1_A2YelowTicket > h2, 
-    .A1_A2WhiteTicket > h2 {
-      font-size: 20px;
-    }
-    .A1_A2YelowTicket > p, 
-    .A1_A2WhiteTicket > p {
-      font-size: 16px;
-    }
-    .A1_A2infoCoursesBlock {
-        flex-direction: column;
-        margin: 0;
-        width: fit-content;
-        margin: 5px 0;
-        margin-left: 10px;
-    }
-    .A1_A2infoCoursesBlock >img {
-        width: 300px;
-        height: 300px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0;
-    }
-    .A1_A2ContentBlock{
-        display: flex;
-        flex-direction: row;
-    }
-    .A1_A2ContentBlock {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-    }
-    .A1_A2Title {
-        position: absolute;
-        right: 0;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 0;
-    }
-    .A1_A2Text {
-        margin-top: 11%;
-    }
+.A1_A2infoText > p{
+    font-size: 18px;
+    font-weight: 400;
 }
-
-@media screen and (max-width: 520px) {
-    .A1_A2YelowTicket, 
-    .A1_A2WhiteTicket {
-        width: 180px;
-        height: 180px;
-    }
-    .A1_A2YelowTicket > h2, 
-    .A1_A2WhiteTicket > h2 {
-      font-size: 18px;
-    }
-    .A1_A2YelowTicket > p, 
-    .A1_A2WhiteTicket > p {
-      font-size: 14px;
-      font-weight: 700;
-    }
-    .A1_A2ButtonWhite,
-    .A1_A2ButtonPink{
-        font-size: 15px;
-        width: 115px;
-        height: 45px;
-    }
-    .A1_A2ButtonMore > img{
-        width: 45px;
-        height: 45px;
-        margin: 0 5px;
-    }
-    .A1_A2infoCoursesBlock > img {
-        width: 200px;
-        height: 200px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0;
-    }
-    .A1_A2Text {
-        margin-left: 2px;
-        margin-top: 17%;
-    }
-    .A1_A2Text > p {
-        font-size: 15px;
-        font-weight: 500;
-    }
-} 
