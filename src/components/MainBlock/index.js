@@ -14,13 +14,21 @@ const MainBlock = ({scrollToElement}) => {
     const videoEl = useRef(null);
 
     useEffect(() => {
-        if(showBlock){
+        const playVideo = async () => {
+            try {
+                await videoEl.current.play();
+            } catch (error) {
+                console.log('');
+            }
+        };
+    
+        if (showBlock) {
             videoEl.current.currentTime = 0;
-            videoEl.current.play();
+            playVideo();
         } else {
-            videoEl.current.pause()
+            videoEl.current.pause();
         }
-    }, [showBlock])
+    }, [showBlock]);
 
     return (
         <div className="mainBlock" id="main">

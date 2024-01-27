@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState , useEffect} from 'react';
 import './styles.css';
 import MainBlock from '../../components/MainBlock'
 import ExpereanceBlock from '../../components/ExpereanceBlock'
@@ -6,10 +6,28 @@ import CoursesBlock from '../../components/CoursesBlock'
 import WhyBlock from '../../components/WhyBlock'
 import Footer from '../../components/Footer'
 import ReviewsBlock from '../../components/ReviewsBlock'
+import buttonToTop from '../../assets/images/buttonToTop.svg'
 
 function App() {
-  const targetElementRef = useRef(null);
+  const[scrollTop, setScrollTop] = useState(0)
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+  const handleScroll = () => {
+    setScrollTop(window.scrollY);
+  };
 
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  const targetElementRef = useRef(null);
   const scrollToElement = () => {
     if (targetElementRef && targetElementRef.current) {
       targetElementRef.current.scrollIntoView(
@@ -28,6 +46,10 @@ function App() {
       <WhyBlock/>
       <ReviewsBlock/>
       <Footer/>
+      {scrollTop >= 50 && 
+      <div className="buttonToTop" onClick={scrollToTop}>
+        <img src={buttonToTop} alt=''/>
+      </div>}
     </div>
   );
 }
