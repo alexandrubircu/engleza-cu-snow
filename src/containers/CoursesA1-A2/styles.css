@@ -101,6 +101,7 @@
     border: none;
     background-color: transparent;
     margin-top: 15px;
+    transition: transform 0.5s ease-in-out;
 }
 .coursesA1A2ButtonMore > img{
     width: 60px;
