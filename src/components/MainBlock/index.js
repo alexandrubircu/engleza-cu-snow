@@ -9,6 +9,7 @@ import mainYoutube from '../../assets/images/mainYoutube.png'
 import emojiEyes from '../../assets/images/emojiEyes.svg'
 import mainVideo from '../../assets/video/mainVideo.MOV'
 const MainBlock = ({scrollToElement}) => {
+    const [loading, setLoading] = useState(true);
     const[showBlock, setShowBlock] = useState(0);
 
     const videoEl = useRef(null);
@@ -21,25 +22,44 @@ const MainBlock = ({scrollToElement}) => {
                 console.log('');
             }
         };
-    
-        if (showBlock) {
-            videoEl.current.currentTime = 0;
-            playVideo();
-        } else {
-            videoEl.current.pause();
+        if (videoEl.current){
+            if (showBlock) {
+                videoEl.current.currentTime = 0;
+                playVideo();
+            } else {
+                videoEl.current.pause();
+            }
         }
     }, [showBlock]);
+
+    const handleImageProgress = (event) => {
+        console.log(event);
+        if (event.lengthComputable) {
+          const percentage = (event.loaded / event.total) * 100;
+          console.log(percentage);
+        }
+      };
 
     return (
         <div className="mainBlock" id="main">
             <div className="mainBlockContent">
                 <div className="imgBlock">
+                    {loading && <div className="skeleton">
+                        <div></div>
+                    </div> }
                     <video ref={videoEl} onEnded={() => setShowBlock(0)} style={showBlock ? {transform: 'scale(1)'} : {transform: "scale(0)"}} src={mainVideo}></video>
-                    <img src={mainImage} alt=''/>
+                    <img 
+                        onProgress={handleImageProgress}
+                        onLoad={() => setLoading(false)} 
+                        src={mainImage}
+                        alt=''/>
                 </div>
                 <div className="mainTextBlock">
                     <div className="avatarMbileBlock">
-                        <img src={mainAvatar} alt=''/>
+                        {loading && <div className="skeletonMobile">
+                            <div></div>
+                        </div> }
+                        <img src={mainAvatar} onLoad={() => setLoading(false)} alt=''/>
                     </div>
                     <h1>Invață<br/>Engleza cu <span className="snow">Snow</span></h1>
                     <p>Deschideți ușa spre cunoaștere! Împreună cu Snow, fiecare lecție devine o aventură în lumea englezei. Apăsați butonul de mai jos și începeți călătoria voastră.</p>

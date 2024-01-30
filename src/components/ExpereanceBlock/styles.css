@@ -13,7 +13,10 @@
     flex-direction: row;
 
 }
-.expereanceContent > img{
+.expereanceImage{
+    position: relative;
+}
+.expereanceImage > img{
     width: 500px;
     height: 500px;
     border-radius: 100%;
@@ -67,8 +70,40 @@
     font-size: 22px;
     font-weight: 700;
 }
+
+.skeletonExpereance{
+    position: absolute;
+    top: 40px;
+    z-index: 9999;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.skeletonExpereance > div {
+    background-color: rgba(0, 0, 0, 0.11);
+    height: 100%;
+    border-radius: 100%;
+    animation: skeleton-loading 2s ease-in-out 0.5s infinite;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        opacity: 1;
+    }
+    
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+
 @media screen and (max-width: 1200px) {
-    .expereanceContent > img{
+    .expereanceImage > img, .skeletonExpereance{
         width: 400px;
         height: 400px;
         margin-right: 20px;
@@ -93,12 +128,17 @@
         position: relative;
         margin-top: 250px;
     }
-    .expereanceContent > img{
+    .expereanceImage{
         margin-right: 0;
         position: absolute;
         top: -250px;
     }
+    .expereanceImage > img{
+        top: 0;
+    }
     .expereanceTextBlock{
+        position: relative;
+        z-index: 99999;
         width: 490px;
     }
     .expereanceTextBlock > img{
@@ -123,10 +163,16 @@
     .expereanceTextBlock{
         width: 390px;
     }
-    .expereanceContent > img{
+    .expereanceImage > img{
         width: 350px;
         height: 350px;
-        top: -220px;
+        top: 0;
+        margin-right: 0px;
+    }
+    .skeletonExpereance{
+        width: 350px;
+        height: 350px;
+        top: 0;
     }
     .expereanceTextBlock > img{
         top: 75px;

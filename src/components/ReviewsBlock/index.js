@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import './styles.css';
 import Slider from "react-slick";
 import ReviewsIcon from '../../assets/images/reviewIcon.png'
 import reviewsuserImage from '../../assets/images/reviewsuserImage.png'
 
 const ReviewsBlock = () => {
+    const [loading, setLoading] = useState(true);
     const settings = {
         dots: true,
         infinite: false,
@@ -72,7 +73,12 @@ const ReviewsBlock = () => {
                                 <div className="reviewsYellowTiketContent">
                                     <div className="reviewsTiketTopContent">
                                         <img src={ReviewsIcon} alt=''/>
-                                        <img src={reviewsuserImage} alt=''/>
+                                        <div>
+                                            {loading && <div className="skeletonReviews">
+                                                <div></div>
+                                            </div> }
+                                           <img src={reviewsuserImage} onLoad={() => setLoading(false)} alt=''/> 
+                                        </div>
                                     </div>
                                     <p>
                                         Au fost 5 ore productive, care mi-au dezvoltat abilitätile de a scrie si intelege ce e cu adevarat important la sesiunea de bac. Datorita reperelor, sfaturilor si lucrurilor NOl spuse, sunt sigura că voi lua nota pe care mi-o doresc.
@@ -84,7 +90,12 @@ const ReviewsBlock = () => {
                                 <div className="reviewsWhiteTiketContent">
                                     <div className="reviewsTiketTopContent">
                                         <img src={ReviewsIcon} alt=''/>
-                                        <img src={reviewsuserImage} alt=''/>
+                                        <div>
+                                            {loading && <div className="skeletonReviews">
+                                                <div></div>
+                                            </div> }
+                                           <img src={reviewsuserImage} onLoad={() => setLoading(false)} alt=''/> 
+                                        </div>
                                     </div>
                                     <p>
                                         Hello!!
@@ -97,7 +108,12 @@ const ReviewsBlock = () => {
                                 <div className="reviewsPinkTiketContent">
                                     <div className="reviewsTiketTopContent">
                                         <img src={ReviewsIcon} alt=''/>
-                                        <img src={reviewsuserImage} alt=''/>
+                                        <div>
+                                            {loading && <div className="skeletonReviews">
+                                                <div></div>
+                                            </div> }
+                                           <img src={reviewsuserImage} onLoad={() => setLoading(false)} alt=''/> 
+                                        </div>
                                     </div>
                                     <p>
                                         Sunt foarte incântat de rezultatele obtinute in timpul cursului, am trecut un pic peste bariera de a vorbi in englezã si am invätat sa formulez corect si coerent gândurile care le am.
@@ -109,7 +125,12 @@ const ReviewsBlock = () => {
                                 <div className="reviewsYellowTiketContent">
                                     <div className="reviewsTiketTopContent">
                                         <img src={ReviewsIcon} alt=''/>
-                                        <img src={reviewsuserImage} alt=''/>
+                                        <div>
+                                            {loading && <div className="skeletonReviews">
+                                                <div></div>
+                                            </div> }
+                                           <img src={reviewsuserImage} onLoad={() => setLoading(false)} alt=''/> 
+                                        </div>
                                     </div>
                                     <p>
                                         Cursul mi sa pärut foarte bun am invatat gramatica care nu o stiam, sunt multumit de rezultate si vin si la cursul urmätor
@@ -120,7 +141,12 @@ const ReviewsBlock = () => {
                                 <div className="reviewsWhiteTiketContent">
                                     <div className="reviewsTiketTopContent">
                                         <img src={ReviewsIcon} alt=''/>
-                                        <img src={reviewsuserImage} alt=''/>
+                                        <div>
+                                            {loading && <div className="skeletonReviews">
+                                                <div></div>
+                                            </div> }
+                                           <img src={reviewsuserImage} onLoad={() => setLoading(false)} alt=''/> 
+                                        </div>
                                     </div>
                                     <p>
                                         Mi-a pläcut foarte mult, mai ales inceput lectilor când trebuia sã vorbim in grup
@@ -133,7 +159,12 @@ const ReviewsBlock = () => {
                                 <div className="reviewsPinkTiketContent">
                                     <div className="reviewsTiketTopContent">
                                         <img src={ReviewsIcon} alt=''/>
-                                        <img src={reviewsuserImage} alt=''/>
+                                        <div>
+                                            {loading && <div className="skeletonReviews">
+                                                <div></div>
+                                            </div> }
+                                           <img src={reviewsuserImage} onLoad={() => setLoading(false)} alt=''/> 
+                                        </div>
                                     </div>
                                     <p>
                                         How to learn English speaking at home? 👍Good question!!! The answer is not so difficult. The person who can answer is 👩‍🏫
