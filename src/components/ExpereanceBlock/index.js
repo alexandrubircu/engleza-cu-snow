@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles.css';
 import expereanceImage from '../../assets/images/expereanceImage.png'
 import smartstartkidsacademyImage from '../../assets/images/smartstartkidsacademyImage.png'
@@ -10,10 +10,17 @@ import oratoricaImage from '../../assets/images/oratoricaImage.png'
 import expereancelineImage from '../../assets/images/expereancelineImage.png'
 
 const ExpereanceBlock = () => {
+    const [loading, setLoading] = useState(true);
+
     return(
         <div className="expereanceBlock">
             <div className="expereanceContent">
-                <img src={expereanceImage} alt='' width={500} height={500}/>
+                <div className="expereanceImage">
+                    {loading && <div className="skeletonExpereance">
+                        <div></div>
+                    </div> }
+                    <img src={expereanceImage} onLoad={() => setLoading(false)} alt='' width={500} height={500}/>  
+                </div>
                 <div className="expereanceTextBlock">
                     <h1>Experiență</h1>
                     <div className="expereanceTextRow"><img src={smartstartkidsacademyImage} alt=''/> <p>Smart Start Kids Academy <br/> <span>EFL Teacher</span></p></div>

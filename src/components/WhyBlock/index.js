@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles.css'
 import whyImage from "../../assets/images/whyImage.png"
 
 const WhyBlock = () => {
+    const [loading, setLoading] = useState(true);
+
     return(
         <div className="whyBlock">
            <div className="whyBlockContent">
@@ -29,7 +31,12 @@ const WhyBlock = () => {
                     </div>
                 </div>
             </div>
-            <img src={whyImage} alt=''/>
+            <div className="whyBlockImg">
+                {loading && <div className="skeletonWhy">
+                    <div></div>
+                </div> }
+               <img src={whyImage} onLoad={() => setLoading(false)} alt=''/> 
+            </div>
            </div>
         </div>
     )

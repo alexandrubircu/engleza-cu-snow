@@ -45,7 +45,7 @@
     font-weight: 500;
 }
 
-.whyBlockContent > img{
+.whyBlockContent > .whyBlockImg > img{
     width: 500px;
     height: 500px;
     border-radius: 100%;
@@ -55,23 +55,61 @@
     top: 60px;
 }
 
+.whyBlockImg{
+    position: relative;
+}
+
+.skeletonWhy{
+    position: absolute;
+    top: 60px;
+    width: 500px;
+    height: 500px;
+    z-index: 9999;
+    margin-left: 50px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.skeletonWhy > div {
+    background-color: rgba(0, 0, 0, 0.11);
+    height: 100%;
+    border-radius: 100%;
+    animation: skeleton-loading 2s ease-in-out 0.5s infinite;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        opacity: 1;
+    }
+    
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
 @media screen and (max-width: 1200px) {
     .whyBlockText{
-        z-index: 1;
+        position: relative;
+        z-index: 99999;
         margin-right: 200px;
     }
     .whyBlockContent{
         position: relative;
     }
-    .whyBlockContent > img{
-        width: 400px;
-        height: 400px;
+    .whyBlockImg{
         margin-left: 400px;
         position: absolute;
     }
+    .whyBlockContent > .whyBlockImg > img, .skeletonWhy{
+        width: 400px;
+        height: 400px;
+    }
 }
 @media screen and (max-width: 850px) {
-    .whyBlockContent > img{
+    .whyBlockContent > .whyBlockImg > img, .skeletonWhy{
         display: none;
     }
     .whyBlockText{

@@ -71,7 +71,7 @@
     margin-top: 20px;
     margin-left: 20px;
 }
-.reviewsTiketTopContent >img:nth-child(2){
+.reviewsTiketTopContent > div >img{
     position: absolute;
     border-radius: 50px;
     box-shadow: 6px 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -153,7 +153,24 @@
 .slick-next:before, .slick-prev:before {
     display: none;
 }
+.skeletonReviews{
+    position: absolute;
+    left: 39.5px;
+    top: -20.7px;
+    width: 100px;
+    height: 100px;
+    z-index: 9999;
+    margin-left: 50px;
+    border-radius: 100%;
+    background-color: white;
+}
 
+.skeletonReviews > div {
+    background-color: rgba(0, 0, 0, 0.11);
+    height: 100%;
+    border-radius: 100%;
+    animation: skeleton-loading 2s ease-in-out 0.5s infinite;
+}
  @media screen and (max-width: 1200px) {
     .reviewsSliderview {
         width: 80%; 
