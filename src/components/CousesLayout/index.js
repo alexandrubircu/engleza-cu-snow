@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 
 const CoursesLayout = ({children}) => {
-    const [activeDropdown, setActiveDropdown] = useState("activeDropdown1"); 
+    const [activeDropdown, setActiveDropdown] = useState("dropdownContent1"); 
     const [stopAnimation, setStopAnimation] = useState(false);
     const blockOne = useRef();
     const blockTwo = useRef();

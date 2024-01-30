@@ -19,7 +19,14 @@ const CoursesA1A2 = () => {
                             <p>3 150 MDL / 160 EUR</p>
                             <div className="A1_A2TiketButton">
                                 <button className="coursesA1A2ButtonWhite">MAKE OFFER</button>
-                                <button disabled={stopAnimation} onClick={() => toggleDropdown('dropdownContent1')} className="coursesA1A2ButtonMore"><img src={CoursesButton} alt=''/></button>
+                                <button 
+                                    style={activeDropdown === 'dropdownContent1' ? {transform: 'rotate(180deg)'} : {transform: 'rotate(0deg)'}}
+                                    disabled={stopAnimation} 
+                                    onClick={() => toggleDropdown('dropdownContent1')} 
+                                    className="coursesA1A2ButtonMore"
+                                >
+                                    <img src={CoursesButton} alt=''/>
+                                </button>
                             </div>
                         </div>
                     
@@ -30,7 +37,12 @@ const CoursesA1A2 = () => {
                             <p>3 150 MDL / 160 EUR</p>
                             <div className="A1_A2TiketButton">
                             <button className="coursesA1A2ButtonPink">MAKE OFFER</button>
-                            <button style={activeDropdown === 'dropdownContent2' ? {transform: 'rotate(180deg)'} : {transform: 'rotate(0deg)'}} disabled={stopAnimation} onClick={() => toggleDropdown('dropdownContent2')} className="coursesA1A2ButtonMore">
+                            <button 
+                                style={activeDropdown === 'dropdownContent2' ? {transform: 'rotate(180deg)'} : {transform: 'rotate(0deg)'}} 
+                                disabled={stopAnimation} 
+                                onClick={() => toggleDropdown('dropdownContent2')} 
+                                className="coursesA1A2ButtonMore"
+                            >
                                 <img src={CoursesButton} alt=''/>
                             </button>
                             </div>
@@ -43,7 +55,14 @@ const CoursesA1A2 = () => {
                             <p>3 150 MDL / 160 EUR</p>
                             <div className="A1_A2TiketButton">
                             <button className="coursesA1A2ButtonWhite">MAKE OFFER</button>
-                            <button disabled={stopAnimation} onClick={() => toggleDropdown('dropdownContent3')} className="coursesA1A2ButtonMore"><img src={CoursesButton} alt=''/></button>
+                            <button 
+                                style={activeDropdown === 'dropdownContent3' ? {transform: 'rotate(180deg)'} : {transform: 'rotate(0deg)'}} 
+                                disabled={stopAnimation}
+                                onClick={() => toggleDropdown('dropdownContent3')}
+                                className="coursesA1A2ButtonMore"
+                            >
+                                    <img src={CoursesButton} alt=''/>
+                            </button>
                             </div>
                         </div>
                     
@@ -54,7 +73,14 @@ const CoursesA1A2 = () => {
                             <p>3 150 MDL / 160 EUR</p>
                             <div className="A1_A2TiketButton">
                             <button className="coursesA1A2ButtonPink">MAKE OFFER</button>
-                            <button disabled={stopAnimation} onClick={() => toggleDropdown('dropdownContent4')} className="coursesA1A2ButtonMore"><img src={CoursesButton} alt=''/></button>
+                            <button
+                                style={activeDropdown === 'dropdownContent4' ? {transform: 'rotate(180deg)'} : {transform: 'rotate(0deg)'}} 
+                                disabled={stopAnimation} 
+                                onClick={() => toggleDropdown('dropdownContent4')} 
+                                className="coursesA1A2ButtonMore"
+                            >
+                                <img src={CoursesButton} alt=''/>
+                            </button>
                             </div>
                         </div>
 
