@@ -47,9 +47,9 @@ function App() {
       <ReviewsBlock/>
       <Footer/>
       {scrollTop >= 50 && 
-      <div className="buttonToTop" onClick={scrollToTop}>
+      <button className='buttonToTop' onClick={scrollToTop}>
         <img src={buttonToTop} alt=''/>
-      </div>}
+      </button>}
     </div>
   );
 }
