@@ -212,11 +212,12 @@
     .mainBlockContent .imgBlock > video{
         width: 300px;
         height: 300px;
-        top: -415px;
+        top: -431px;
         right: -320px;
         position: absolute;
         transition: transform .5s ease-out;
         object-fit: cover;
         border-radius: 100%;
+        z-index: 999999;
     }
 }
