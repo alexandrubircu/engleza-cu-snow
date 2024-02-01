@@ -147,7 +147,7 @@
 
 }
 @media screen and (max-width: 600px) {
-    .expereanceBlock{margin-bottom: 50px;}
+    .expereanceBlock{margin-bottom: 50px;margin-top: 50px;}
     .expereanceTextBlock > h1{
         font-size: 30px;
     }
