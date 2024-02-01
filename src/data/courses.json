@@ -1,0 +1,200 @@
+{
+    "courses": [
+      {
+        "id": "1",
+        "url": "/CoursesA1-A2",
+        "name": "A1-A2",
+        "courses": [
+            {
+                "id": "1",
+                "name": "A1.1",
+                "duration": "DURATA: 21 de zile",
+                "price": "3 150 MDL / 160 EUR",
+                "color": "White",
+                "buttonColor": "Pink"
+            },
+            {
+                "id": "2",
+                "name": "A1.2",
+                "duration": "DURATA: 21 de zile",
+                "price": "3 150 MDL / 160 EUR",
+                "color": "Pink",
+                "buttonColor": "White"
+            },
+            {
+                "id": "3",
+                "name": "A2.1",
+                "duration": "DURATA: 21 de zile",
+                "price": "3 150 MDL / 160 EUR",
+                "color": "White",
+                "buttonColor": "Pink"
+            },
+            {
+                "id": "4",
+                "name": "A2.2",
+                "duration": "DURATA: 21 de zile",
+                "price": "3 150 MDL / 160 EUR",
+                "color": "Pink",
+                "buttonColor": "White"
+            }
+        ],
+        "coursesText": [
+            {
+                "id": "1",
+                "name": "A1.1",
+                "img": "A1.1Image.png",
+                "text": "Vocabular de bază: Termeni și expresii esențiale pentru a comunica în diverse contexte, cum ar fi să îți prezintiți, să întrebați direcții, să faceți cumpărături etc. \nGramatică elementală: Înțelegerea unor concepte simple de gramatică, cum ar fi structura propozițiilor, verbele de bază, conjugările, articolele, pronumele etc.\nAudiție și vorbire: Exerciții pentru îmbunătățirea înțelegerii a ceea ce se vorbește și pentru a câștiga încredere în a vorbi în limba respectivă.\nLectură și scriere de bază: Introducere în citirea și scrierea limbii, de obicei cu accent pe cuvinte simple și propoziții uzuale. Cultură și aspecte sociale: Unele cursuri pot include și aspecte culturale ale țării asociate cu limba învățată."
+            },
+            {
+                "id": "1",
+                "name": "A1.2",
+                "img": "A1.1Image.png",
+                "text": "Vocabular de bază: Termeni și expresii esențiale pentru a comunica în diverse contexte, cum ar fi să îți prezintiți, să întrebați direcții, să faceți cumpărături etc. \nGramatică elementală: Înțelegerea unor concepte simple de gramatică, cum ar fi structura propozițiilor, verbele de bază, conjugările, articolele, pronumele etc.\nAudiție și vorbire: Exerciții pentru îmbunătățirea înțelegerii a ceea ce se vorbește și pentru a câștiga încredere în a vorbi în limba respectivă.\nLectură și scriere de bază: Introducere în citirea și scrierea limbii, de obicei cu accent pe cuvinte simple și propoziții uzuale. Cultură și aspecte sociale: Unele cursuri pot include și aspecte culturale ale țării asociate cu limba învățată."
+            },
+            {
+                "id": "1",
+                "name": "A2.1",
+                "img": "A1.1Image.png",
+                "text": "Vocabular de bază: Termeni și expresii esențiale pentru a comunica în diverse contexte, cum ar fi să îți prezintiți, să întrebați direcții, să faceți cumpărături etc. \nGramatică elementală: Înțelegerea unor concepte simple de gramatică, cum ar fi structura propozițiilor, verbele de bază, conjugările, articolele, pronumele etc.\nAudiție și vorbire: Exerciții pentru îmbunătățirea înțelegerii a ceea ce se vorbește și pentru a câștiga încredere în a vorbi în limba respectivă.\nLectură și scriere de bază: Introducere în citirea și scrierea limbii, de obicei cu accent pe cuvinte simple și propoziții uzuale. Cultură și aspecte sociale: Unele cursuri pot include și aspecte culturale ale țării asociate cu limba învățată."
+            },
+            {
+                "id": "1",
+                "name": "A2.2",
+                "img": "A1.1Image.png",
+                "text": "Vocabular de bază: Termeni și expresii esențiale pentru a comunica în diverse contexte, cum ar fi să îți prezintiți, să întrebați direcții, să faceți cumpărături etc. \nGramatică elementală: Înțelegerea unor concepte simple de gramatică, cum ar fi structura propozițiilor, verbele de bază, conjugările, articolele, pronumele etc.\nAudiție și vorbire: Exerciții pentru îmbunătățirea înțelegerii a ceea ce se vorbește și pentru a câștiga încredere în a vorbi în limba respectivă.\nLectură și scriere de bază: Introducere în citirea și scrierea limbii, de obicei cu accent pe cuvinte simple și propoziții uzuale. Cultură și aspecte sociale: Unele cursuri pot include și aspecte culturale ale țării asociate cu limba învățată."
+            }
+        ]
+      },
+      {
+        "id": "1",
+        "url": "/CoursesB1-B2",
+        "name": "B1-B2",
+        "courses": [
+            {
+                "id": "1",
+                "name": "B1.1",
+                "duration": "DURATA: 21 de zile",
+                "price": "3 150 MDL / 160 EUR",
+                "color": "White",
+                "buttonColor": "Pink"
+            },
+            {
+                "id": "2",
+                "name": "B1.2",
+                "duration": "DURATA: 21 de zile",
+                "price": "3 150 MDL / 160 EUR",
+                "color": "Pink",
+                "buttonColor": "White"
+            },
+            {
+                "id": "3",
+                "name": "B2.1",
+                "duration": "DURATA: 21 de zile",
+                "price": "3 150 MDL / 160 EUR",
+                "color": "White",
+                "buttonColor": "Pink"
+            },
+            {
+                "id": "4",
+                "name": "B2.2",
+                "duration": "DURATA: 21 de zile",
+                "price": "3 150 MDL / 160 EUR",
+                "color": "Pink",
+                "buttonColor": "White"
+            }
+        ],
+        "coursesText": [
+            {
+                "id": "1",
+                "name": "B1.1",
+                "img": "A1.1Image.png",
+                "text": "Vocabular de bază: Termeni și expresii esențiale pentru a comunica în diverse contexte, cum ar fi să îți prezintiți, să întrebați direcții, să faceți cumpărături etc. \nGramatică elementală: Înțelegerea unor concepte simple de gramatică, cum ar fi structura propozițiilor, verbele de bază, conjugările, articolele, pronumele etc.\nAudiție și vorbire: Exerciții pentru îmbunătățirea înțelegerii a ceea ce se vorbește și pentru a câștiga încredere în a vorbi în limba respectivă.\nLectură și scriere de bază: Introducere în citirea și scrierea limbii, de obicei cu accent pe cuvinte simple și propoziții uzuale. Cultură și aspecte sociale: Unele cursuri pot include și aspecte culturale ale țării asociate cu limba învățată."
+            },
+            {
+                "id": "1",
+                "name": "B1.2",
+                "img": "A1.1Image.png",
+                "text": "Vocabular de bază: Termeni și expresii esențiale pentru a comunica în diverse contexte, cum ar fi să îți prezintiți, să întrebați direcții, să faceți cumpărături etc. \nGramatică elementală: Înțelegerea unor concepte simple de gramatică, cum ar fi structura propozițiilor, verbele de bază, conjugările, articolele, pronumele etc.\nAudiție și vorbire: Exerciții pentru îmbunătățirea înțelegerii a ceea ce se vorbește și pentru a câștiga încredere în a vorbi în limba respectivă.\nLectură și scriere de bază: Introducere în citirea și scrierea limbii, de obicei cu accent pe cuvinte simple și propoziții uzuale. Cultură și aspecte sociale: Unele cursuri pot include și aspecte culturale ale țării asociate cu limba învățată."
+            },
+            {
+                "id": "1",
+                "name": "B2.1",
+                "img": "A1.1Image.png",
+                "text": "Vocabular de bază: Termeni și expresii esențiale pentru a comunica în diverse contexte, cum ar fi să îți prezintiți, să întrebați direcții, să faceți cumpărături etc. \nGramatică elementală: Înțelegerea unor concepte simple de gramatică, cum ar fi structura propozițiilor, verbele de bază, conjugările, articolele, pronumele etc.\nAudiție și vorbire: Exerciții pentru îmbunătățirea înțelegerii a ceea ce se vorbește și pentru a câștiga încredere în a vorbi în limba respectivă.\nLectură și scriere de bază: Introducere în citirea și scrierea limbii, de obicei cu accent pe cuvinte simple și propoziții uzuale. Cultură și aspecte sociale: Unele cursuri pot include și aspecte culturale ale țării asociate cu limba învățată."
+            },
+            {
+                "id": "1",
+                "name": "B2.2",
+                "img": "A1.1Image.png",
+                "text": "Vocabular de bază: Termeni și expresii esențiale pentru a comunica în diverse contexte, cum ar fi să îți prezintiți, să întrebați direcții, să faceți cumpărături etc. \nGramatică elementală: Înțelegerea unor concepte simple de gramatică, cum ar fi structura propozițiilor, verbele de bază, conjugările, articolele, pronumele etc.\nAudiție și vorbire: Exerciții pentru îmbunătățirea înțelegerii a ceea ce se vorbește și pentru a câștiga încredere în a vorbi în limba respectivă.\nLectură și scriere de bază: Introducere în citirea și scrierea limbii, de obicei cu accent pe cuvinte simple și propoziții uzuale. Cultură și aspecte sociale: Unele cursuri pot include și aspecte culturale ale țării asociate cu limba învățată."
+            }
+        ]
+      },
+      {
+        "id": "1",
+        "url": "/CoursesC1-C2",
+        "name": "C1-C2",
+        "courses": [
+            {
+                "id": "1",
+                "name": "C1.1",
+                "duration": "DURATA: 21 de zile",
+                "price": "3 150 MDL / 160 EUR",
+                "color": "White",
+                "buttonColor": "Pink"
+            },
+            {
+                "id": "2",
+                "name": "C1.2",
+                "duration": "DURATA: 21 de zile",
+                "price": "3 150 MDL / 160 EUR",
+                "color": "Pink",
+                "buttonColor": "White"
+            },
+            {
+                "id": "3",
+                "name": "C2.1",
+                "duration": "DURATA: 21 de zile",
+                "price": "3 150 MDL / 160 EUR",
+                "color": "White",
+                "buttonColor": "Pink"
+            },
+            {
+                "id": "4",
+                "name": "C2.2",
+                "duration": "DURATA: 21 de zile",
+                "price": "3 150 MDL / 160 EUR",
+                "color": "Pink",
+                "buttonColor": "White"
+            }
+        ],
+        "coursesText": [
+            {
+                "id": "1",
+                "name": "C1.1",
+                "img": "A1.1Image.png",
+                "text": "Vocabular de bază: Termeni și expresii esențiale pentru a comunica în diverse contexte, cum ar fi să îți prezintiți, să întrebați direcții, să faceți cumpărături etc. \nGramatică elementală: Înțelegerea unor concepte simple de gramatică, cum ar fi structura propozițiilor, verbele de bază, conjugările, articolele, pronumele etc.\nAudiție și vorbire: Exerciții pentru îmbunătățirea înțelegerii a ceea ce se vorbește și pentru a câștiga încredere în a vorbi în limba respectivă.\nLectură și scriere de bază: Introducere în citirea și scrierea limbii, de obicei cu accent pe cuvinte simple și propoziții uzuale. Cultură și aspecte sociale: Unele cursuri pot include și aspecte culturale ale țării asociate cu limba învățată."
+            },
+            {
+                "id": "1",
+                "name": "C1.2",
+                "img": "A1.1Image.png",
+                "text": "Vocabular de bază: Termeni și expresii esențiale pentru a comunica în diverse contexte, cum ar fi să îți prezintiți, să întrebați direcții, să faceți cumpărături etc. \nGramatică elementală: Înțelegerea unor concepte simple de gramatică, cum ar fi structura propozițiilor, verbele de bază, conjugările, articolele, pronumele etc.\nAudiție și vorbire: Exerciții pentru îmbunătățirea înțelegerii a ceea ce se vorbește și pentru a câștiga încredere în a vorbi în limba respectivă.\nLectură și scriere de bază: Introducere în citirea și scrierea limbii, de obicei cu accent pe cuvinte simple și propoziții uzuale. Cultură și aspecte sociale: Unele cursuri pot include și aspecte culturale ale țării asociate cu limba învățată."
+            },
+            {
+                "id": "1",
+                "name": "C2.1",
+                "img": "A1.1Image.png",
+                "text": "Vocabular de bază: Termeni și expresii esențiale pentru a comunica în diverse contexte, cum ar fi să îți prezintiți, să întrebați direcții, să faceți cumpărături etc. \nGramatică elementală: Înțelegerea unor concepte simple de gramatică, cum ar fi structura propozițiilor, verbele de bază, conjugările, articolele, pronumele etc.\nAudiție și vorbire: Exerciții pentru îmbunătățirea înțelegerii a ceea ce se vorbește și pentru a câștiga încredere în a vorbi în limba respectivă.\nLectură și scriere de bază: Introducere în citirea și scrierea limbii, de obicei cu accent pe cuvinte simple și propoziții uzuale. Cultură și aspecte sociale: Unele cursuri pot include și aspecte culturale ale țării asociate cu limba învățată."
+            },
+            {
+                "id": "1",
+                "name": "C2.2",
+                "img": "A1.1Image.png",
+                "text": "Vocabular de bază: Termeni și expresii esențiale pentru a comunica în diverse contexte, cum ar fi să îți prezintiți, să întrebați direcții, să faceți cumpărături etc. \nGramatică elementală: Înțelegerea unor concepte simple de gramatică, cum ar fi structura propozițiilor, verbele de bază, conjugările, articolele, pronumele etc.\nAudiție și vorbire: Exerciții pentru îmbunătățirea înțelegerii a ceea ce se vorbește și pentru a câștiga încredere în a vorbi în limba respectivă.\nLectură și scriere de bază: Introducere în citirea și scrierea limbii, de obicei cu accent pe cuvinte simple și propoziții uzuale. Cultură și aspecte sociale: Unele cursuri pot include și aspecte culturale ale țării asociate cu limba învățată."
+            }
+        ]
+      }
+    ]
+  }
+  
