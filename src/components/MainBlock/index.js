@@ -32,14 +32,6 @@ const MainBlock = ({scrollToElement}) => {
         }
     }, [showBlock]);
 
-    const handleImageProgress = (event) => {
-        console.log(event);
-        if (event.lengthComputable) {
-          const percentage = (event.loaded / event.total) * 100;
-          console.log(percentage);
-        }
-      };
-
     return (
         <div className="mainBlock" id="main">
             <div className="mainBlockContent">
@@ -49,7 +41,6 @@ const MainBlock = ({scrollToElement}) => {
                     </div> }
                     <video ref={videoEl} onEnded={() => setShowBlock(0)} style={showBlock ? {transform: 'scale(1)'} : {transform: "scale(0)"}} src={mainVideo}></video>
                     <img 
-                        onProgress={handleImageProgress}
                         onLoad={() => setLoading(false)} 
                         src={mainImage}
                         alt=''/>

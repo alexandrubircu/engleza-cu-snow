@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: row;
 }
-.coursesA1A2YellowTicket,
+.coursesA1A2PinkTicket,
 .coursesA1A2WhiteTicket{
     display: flex;
     flex-direction: column;
@@ -35,26 +35,26 @@
     padding: 15px;
     align-items: center;
 }
-.coursesA1A2YellowTicket{background-color: #FEE440;}
+.coursesA1A2PinkTicket{background-color: #FEE440;}
 .coursesA1A2WhiteTicket{background-color: white;}
 
-.coursesA1A2YellowTicket > h2,
+.coursesA1A2PinkTicket > h2,
 .coursesA1A2WhiteTicket > h2{
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 5px;
 }
-.coursesA1A2YellowTicket > p,
+.coursesA1A2PinkTicket > p,
 .coursesA1A2WhiteTicket > p{
     font-size: 22px;
     font-weight: 600;
 }
-.coursesA1A2YellowTicket > p:nth-last-child(2),
+.coursesA1A2PinkTicket > p:nth-last-child(2),
 .coursesA1A2WhiteTicket > p:nth-last-child(2){
   margin-top: 10px;
 }
 
-.coursesA1A2YellowTicket >p:nth-last-child(2){
+.coursesA1A2PinkTicket >p:nth-last-child(2){
     color: white;
 }
 
@@ -201,6 +201,7 @@
     margin-left: 30px;
 }
 .A1_A2infoText > p{
+    white-space: pre-wrap;
     font-size: 20px;
     font-weight: 500;
 }
