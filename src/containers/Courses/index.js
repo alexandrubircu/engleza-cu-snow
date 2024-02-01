@@ -25,7 +25,7 @@ const Courses = () => {
         setCoursData(cours[0]);
         setActiveDropdown(cours[0].courses[0].name);
         
-    }, [])
+    }, [location])
 
     return(
         <div className="coursesA1A2">
