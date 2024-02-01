@@ -28,24 +28,24 @@ const Courses = () => {
     }, [location])
 
     return(
-        <div className="coursesA1A2">
+        <div className="coursesAC">
             <h1>Cursurile <span>{coursData.name}</span></h1>
-            <div className="coursesA1A2Content">
-                <div className="coursesA1A2Ticket">
+            <div className="coursesACContent">
+                <div className="coursesACTicket">
                     {coursData?.courses?.map(item => {
                         return(
-                            <div className={`coursesA1A2${item.color}Ticket`}>
+                            <div className={`coursesAC${item.color}Ticket`}>
                                 <h2>Cursul</h2>
                                 <p>{item.name}</p>
                                 <p>{item.duration}</p>
                                 <p>{item.price}</p>
-                                <div className="A1_A2TiketButton">
-                                    <button className={`coursesA1A2Button${item.buttonColor}`}>MAKE OFFER</button>
+                                <div className="ACTiketButton">
+                                    <button className={`coursesACButton${item.buttonColor}`}>MAKE OFFER</button>
                                     <button 
                                         style={activeDropdown === item.name ? {transform: 'rotate(180deg)'} : {transform: 'rotate(0deg)'}}
                                         disabled={stopAnimation} 
                                         onClick={() => toggleDropdown(item.name)} 
-                                        className="coursesA1A2ButtonMore"
+                                        className="coursesACButtonMore"
                                     >
                                         <img src={CoursesButton} alt=''/>
                                     </button>
@@ -60,12 +60,12 @@ const Courses = () => {
                 <p>Snow</p>
                 {coursData?.coursesText?.map(item => {
                     return(
-                        <div id="dropdownContent1" className={`dropdown-content ${activeDropdown === item.name ? 'show1' : ''}`}>
-                            <div className='A1_1infoContent'>
+                        <div id="dropdownContent" className={`dropdown-content ${activeDropdown === item.name ? 'show1' : ''}`}>
+                            <div className='ACinfoContent'>
                                 <img src={require(`../../assets/images/${item.img}`)} alt=''/>
-                                <div className="A1_A2TextBlock">
-                                    <div className="A1_A2infoTitle"><p>{item.name}</p></div>
-                                    <div className="A1_A2infoText">
+                                <div className="ACTextBlock">
+                                    <div className="ACinfoTitle"><p>{item.name}</p></div>
+                                    <div className="ACinfoText">
                                         <p>{item.text}</p>
                                     </div>
                                 </div>
