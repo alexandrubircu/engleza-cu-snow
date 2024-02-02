@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/engleza-cu-snow/static/css/main.25a51f60.css",
-    "main.js": "/engleza-cu-snow/static/js/main.09a2503b.js",
+    "main.css": "/engleza-cu-snow/static/css/main.57645635.css",
+    "main.js": "/engleza-cu-snow/static/js/main.bd3237d9.js",
     "static/js/787.2e96b0b8.chunk.js": "/engleza-cu-snow/static/js/787.2e96b0b8.chunk.js",
     "static/media/mainVideo.MOV": "/engleza-cu-snow/static/media/mainVideo.667088aebb241cb9267d.MOV",
     "static/media/expereanceImage.png": "/engleza-cu-snow/static/media/expereanceImage.032daad9f2dab9a0a29b.png",
@@ -20,7 +20,7 @@
     "static/media/feedback1.png": "/engleza-cu-snow/static/media/feedback1.28843d23b52a98a43905.png",
     "static/media/feedback4.png": "/engleza-cu-snow/static/media/feedback4.0802d98ab9e4b13b9503.png",
     "static/media/feedback3.png": "/engleza-cu-snow/static/media/feedback3.a76cb6871fdc158b4f68.png",
-    "static/media/coursebackgroundImage.png": "/engleza-cu-snow/static/media/coursebackgroundImage.5ec90ec69552a7544997.png",
+    "static/media/expereanceBackground.png": "/engleza-cu-snow/static/media/expereanceBackground.66d1e70f91beec01b1ab.png",
     "static/media/boockPage3.png": "/engleza-cu-snow/static/media/boockPage3.38ef9b8fe9aa20731d5d.png",
     "static/media/feedback2.png": "/engleza-cu-snow/static/media/feedback2.2aaf845ba6db20d5fca4.png",
     "static/media/phoneImage.png": "/engleza-cu-snow/static/media/phoneImage.b27669679d58379b1053.png",
@@ -28,12 +28,12 @@
     "static/media/emojiEyes.svg": "/engleza-cu-snow/static/media/emojiEyes.ca739098ae34ecabcda29667452e98d6.svg",
     "index.html": "/engleza-cu-snow/index.html",
     "static/media/buttonToTop.svg": "/engleza-cu-snow/static/media/buttonToTop.a0e26d8e4a93b7aa35873e5983cc9a61.svg",
-    "main.25a51f60.css.map": "/engleza-cu-snow/static/css/main.25a51f60.css.map",
-    "main.09a2503b.js.map": "/engleza-cu-snow/static/js/main.09a2503b.js.map",
+    "main.57645635.css.map": "/engleza-cu-snow/static/css/main.57645635.css.map",
+    "main.bd3237d9.js.map": "/engleza-cu-snow/static/js/main.bd3237d9.js.map",
     "787.2e96b0b8.chunk.js.map": "/engleza-cu-snow/static/js/787.2e96b0b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25a51f60.css",
-    "static/js/main.09a2503b.js"
+    "static/css/main.57645635.css",
+    "static/js/main.bd3237d9.js"
   ]
 }
