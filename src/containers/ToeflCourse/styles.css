@@ -28,9 +28,9 @@
 }
 .toeflCaruselMobile{display: none;}
 .toeflInfoBlock{
-    background-color: white;
+    background: linear-gradient(180deg, #FEF0AB 0%, #FCDAE4 100%);
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -58,6 +58,9 @@
    font-size: 22px;
    font-weight: 700;
 }
+.GiftText > p{
+    text-align: center;
+}
 .ticket_phoneBlock{
     display: flex;
     flex-direction: column;
@@ -75,7 +78,7 @@
     padding: 20px;
     width: 250px;
     height: 250px;
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
 }
 .toeflTicket >h2{
@@ -96,7 +99,7 @@
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
     border: none;
     width: calc(100% - 20%);
-    height: 65px;
+    height: 60px;
     font-size: 22px;
     font-weight: 700;
 }
