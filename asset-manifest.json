@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/engleza-cu-snow/static/css/main.57645635.css",
+    "main.css": "/engleza-cu-snow/static/css/main.b6ac5fc4.css",
     "main.js": "/engleza-cu-snow/static/js/main.bd3237d9.js",
     "static/js/787.2e96b0b8.chunk.js": "/engleza-cu-snow/static/js/787.2e96b0b8.chunk.js",
     "static/media/mainVideo.MOV": "/engleza-cu-snow/static/media/mainVideo.667088aebb241cb9267d.MOV",
@@ -28,12 +28,12 @@
     "static/media/emojiEyes.svg": "/engleza-cu-snow/static/media/emojiEyes.ca739098ae34ecabcda29667452e98d6.svg",
     "index.html": "/engleza-cu-snow/index.html",
     "static/media/buttonToTop.svg": "/engleza-cu-snow/static/media/buttonToTop.a0e26d8e4a93b7aa35873e5983cc9a61.svg",
-    "main.57645635.css.map": "/engleza-cu-snow/static/css/main.57645635.css.map",
+    "main.b6ac5fc4.css.map": "/engleza-cu-snow/static/css/main.b6ac5fc4.css.map",
     "main.bd3237d9.js.map": "/engleza-cu-snow/static/js/main.bd3237d9.js.map",
     "787.2e96b0b8.chunk.js.map": "/engleza-cu-snow/static/js/787.2e96b0b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57645635.css",
+    "static/css/main.b6ac5fc4.css",
     "static/js/main.bd3237d9.js"
   ]
 }
