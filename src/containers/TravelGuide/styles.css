@@ -31,17 +31,18 @@
     justify-content: center;
 }
 .TravelGuideBoockBlock{
-    background-color: white;
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
+    border-radius: 25px;
     width: 450px;
     height: 700px;
     margin-right: 10px;
+    border: 1px solid #FFF;
+    overflow: hidden;
 }
 .BoockPage >img{
-    border-radius: 10px;
+    border-radius: 25px;
     border-color: white;
-    border: 1px solid #FFF;
+    
     width: 100%;
     height: 700px;
 }
@@ -81,9 +82,9 @@
 .TravelGuideInfoBlock{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background: linear-gradient(180deg, #FEF0AB 0%, #FCDAE4 100%);
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
+    border-radius: 25px;
     width: 450px;
     height: 700px;
     margin-left: 10px;
@@ -113,7 +114,7 @@
 .TravelGuideInfoBlock >button{
     margin-top: 20px;
     width: 200px;
-    height: 60px;
+    height: 55px;
     border-radius: 8px;
     border: none;
     background: #FCB0CF;

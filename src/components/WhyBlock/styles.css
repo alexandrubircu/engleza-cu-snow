@@ -96,16 +96,25 @@
         z-index: 99999;
         margin-right: 200px;
     }
+    .whyBlockText > h1{
+        width: fit-content;
+    }
+    .whyBlockContentRowPink ,
+    .whyBlockContentRowWhite ,
+    .whyBlockContentRowYellow{
+        width: 500px;
+    }
     .whyBlockContent{
         position: relative;
     }
     .whyBlockImg{
-        margin-left: 400px;
+        margin-top: 10px;
+        margin-left: 290px;
         position: absolute;
     }
     .whyBlockContent > .whyBlockImg > img, .skeletonWhy{
-        width: 400px;
-        height: 400px;
+        width: 450px;
+        height: 450px;
     }
 }
 @media screen and (max-width: 850px) {

@@ -162,6 +162,33 @@
         font-size: 43px;
     }
 }
+@media screen and (max-height: 800px) {
+    .mainBlockContent .imgBlock > img, .skeleton{
+        width: 425px;
+        height: 665px;
+    }
+    .mainBlockContent .imgBlock > video{
+        width: 425px;
+        height: 665px;
+    }
+    .mainTextBlock {
+        width: 340px;
+    }
+    .mainTextBlock > h1{
+        font-size: 43px;
+    }
+}
+@media screen and (max-height: 690px) {
+    .mainBlockContent .imgBlock > img, .skeleton{
+        width: 405px;
+        height: 605px;
+    }
+    .mainBlockContent .imgBlock > video{
+        width: 405px;
+        height: 605px;
+    }
+}
+
 
 @media screen and (max-width: 850px) {
     .imgBlock > img{display: none;}
