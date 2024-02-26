@@ -1,142 +1,250 @@
 .mainBlock{
-    display: flex; 
-}
-.leftBlock{
-    width: 40%;
-    height: 100vh;
     display: flex;
+    width: 100%;
+    height: 100vh;
     align-items: center;
     justify-content: center;
 }
-.leftBlockContent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 20%;
-}
-.webLinKsMobile{display: none;}
-.leftBlockContent > img {
-    border-radius: 50%;
-    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
-    margin-bottom: 24px;
-}
-.leftBlockContent > h1 {
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 45px;
-    margin-bottom: 10px;
-}
-.leftBlockContent > p {
-    width: 400px;
-    font-weight: 500;
-    font-size: 22px;
-    text-align: center;
-    margin-bottom: 24px;
-}
-.rightBlock{
-    width: 60%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.rightContent{
+.mainBlockContent{
+    position: relative;
     display: flex;
     flex-direction: row;
+    width: fit-content;
+    height: fit-content;
     align-items: center;
+}
+.mainBlockContent .imgBlock{
     position: relative;
 }
-.webLinKs{
+.mainBlockContent .imgBlock > img{
+    width: 510px;
+    height: 765px;
+    border-radius: 32px;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+}
+.mainBlockContent .imgBlock > video{
+    width: 510px;
+    height: 765px;
+    position: absolute;
+    transition: transform .5s ease-out;
+    object-fit: cover;
+    border-radius: 32px;
+}
+.avatarMbileBlock{display: none;}
+.mainTextBlock{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    right: -26px;
+    width: 635px;
+    margin-top: -95px;
+    margin-left: 25px;
 }
-.webLinKs > img{
+.mainTextBlock > h1{
+    font-size: 75px;
+    font-weight: 700;
     margin-bottom: 5px;
 }
-.webLinKs > img:hover{
-    cursor: pointer;
+.mainTextBlock > p{
+    font-size: 22px;
+    font-weight: 400;
+
 }
-.webLinKs > img:active{
+.mainWebLinKs{
+    display: flex;
+    flex-direction: row;
+}
+.mainWebLinKs > a:active{
     transform: scale(1.1);
 }
-.mainButton{
+.link , .link > img{
+    display: flex;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 10px;
+}
+
+.mainButtonBlock{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+}
+
+
+.mainButtonCourses{
     background-color: #FBB1CF;
-    width: 350px;
-    height: 80px;
+    width: 310px;
+    height: 70px;
     border-radius: 10px;
     border: none;
     box-shadow: 5px 6px 30px 0px rgba(0, 0, 0, 0.15);
     color: white;    
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
 }
-.mainButton:hover{
-    cursor: pointer;
-}
-.mainButton:active{
+.mainButtonCourses:active{
     background-color: #FFA3C8;
 }
-@media screen and (max-width: 1450px) {
-    .rightContent >img{
-        width: 600px;
-        height: 800px;
-    }
+.mainButtonVideo{
+    background-color: white;
+    position: relative;
+    display: flex;
+    width: 310px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 5px 6px 30px 0px rgba(0, 0, 0, 0.15);
+    justify-content: center;
+    align-items: center;
+
 }
+.mainButtonVideo > p{
+    position: relative;
+    left: -40px;
+    font-size: 25px;
+    font-weight: 600;
+} 
+.mainButtonVideo > img{
+    position: absolute;
+    right: 50px;
+    width: 50px;
+    height: 60px;
+}
+.mainButtonVideo:active{
+    background-color: #FFF5B9;  
+}
+
+.skeleton{
+    position: absolute;
+    top: 0;
+    width: 510px;
+    height: 765px;
+    border-radius: 32px;
+    background-color: white;
+}
+
+.skeleton > div {
+    background-color: rgba(0, 0, 0, 0.11);
+    height: 100%;
+    border-radius: 32px;
+    animation: skeleton-loading 2s ease-in-out 0.5s infinite;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        opacity: 1;
+    }
+    
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
 
 @media screen and (max-width: 1200px) {
-    .rightBlock{display: none;}
-    .leftBlock {
-        width: 100%;
+    
+    .mainBlockContent .imgBlock > img, .skeleton{
+        width: 425px;
+        height: 665px;
     }
-    .leftBlockContent {
-        margin-left: 0;
+    .mainBlockContent .imgBlock > video{
+        width: 425px;
+        height: 665px;
     }
-    .leftBlockContent > img {
-       width: 400px;
-       height: 400px;
+    .mainTextBlock {
+        width: 340px;
     }
-    .leftBlockContent >h1{
-        font-size: 45px;
-    }
-    .webLinKsMobile{
-        display: flex;
-        margin-bottom: 10px;
-    }
-    .webLinKsMobile >a{
-        margin: 0 12px;
-    }
-    .webLinKsMobile > a >img{
-        width: 60px;
-        height: 60px;
+    .mainTextBlock > h1{
+        font-size: 43px;
     }
 }
-@media screen and (max-width: 850px) {
-    .leftBlockContent >h1{
-        font-size: 40px;
+@media screen and (max-height: 800px) {
+    .mainBlockContent .imgBlock > img, .skeleton{
+        width: 425px;
+        height: 665px;
     }
-    .webLinKsMobile > a >img {
-        width: 50px;
-        height: 50px;
+    .mainBlockContent .imgBlock > video{
+        width: 425px;
+        height: 665px;
     }
-    .mainButton {
-        width: 300px;
+    .mainTextBlock {
+        width: 340px;
+    }
+    .mainTextBlock > h1{
+        font-size: 43px;
     }
 }
-@media screen and (max-width: 600px) {
-    .leftBlockContent > img {
-        width: 300px;
-        height: 300px;
-     }
-    .leftBlockContent >h1{
-        font-size: 35px;
+@media screen and (max-height: 690px) {
+    .mainBlockContent .imgBlock > img, .skeleton{
+        width: 405px;
+        height: 605px;
     }
-    .leftBlockContent > p {
-        width: 350px;
-        font-weight: 500;
-        font-size: 20px;
+    .mainBlockContent .imgBlock > video{
+        width: 405px;
+        height: 605px;
     }
 }
 
+
+@media screen and (max-width: 850px) {
+    .imgBlock > img{display: none;}
+    .mainTextBlock {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    .mainTextBlock > h1{
+        font-size: 40px;
+    }
+    .avatarMbileBlock{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .skeleton{
+        display: none;
+    }
+    .skeletonMobile{
+        position: absolute;
+        z-index: 999999;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-color: white;
+    }
+    .skeletonMobile > div {
+        border-radius: 100%;
+        background-color: rgba(0, 0, 0, 0.11);
+        height: 100%;
+        animation: skeleton-loading 2s ease-in-out 0.5s infinite;
+    }
+    .avatarMbileBlock > img{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+    }
+    .mainWebLinKs{
+        width: 100%;
+        justify-content: center;
+    }
+    .mainButtonBlock{
+        width: 100%;
+        align-items: center;
+    }
+    .mainBlockContent .imgBlock > video{
+        width: 300px;
+        height: 300px;
+        top: -431px;
+        right: -320px;
+        position: absolute;
+        transition: transform .5s ease-out;
+        object-fit: cover;
+        border-radius: 100%;
+        z-index: 999999;
+    }
+}

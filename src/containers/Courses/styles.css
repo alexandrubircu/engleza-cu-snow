@@ -1,0 +1,508 @@
+.coursesAC{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+.coursesAC > h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.coursesAC span{
+    color: #A5D3FD;
+}
+.coursesACContent{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20px;
+}
+.coursesACTicket{
+    display: flex;
+    flex-direction: row;
+}
+.coursesACPinkTicket,
+.coursesACWhiteTicket{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 270px;
+    height: 270px;
+    margin: 0 15px;
+    padding: 15px;
+    align-items: center;
+}
+.coursesACPinkTicket{background-color: #FEE440;}
+.coursesACWhiteTicket{background-color: white;}
+
+.coursesACPinkTicket > h2,
+.coursesACWhiteTicket > h2{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.coursesACPinkTicket > p,
+.coursesACWhiteTicket > p{
+    font-size: 22px;
+    font-weight: 600;
+}
+.coursesACPinkTicket > p:nth-last-child(2),
+.coursesACWhiteTicket > p:nth-last-child(2){
+  margin-top: 10px;
+}
+
+.coursesACPinkTicket >p:nth-last-child(2){
+    color: white;
+}
+
+
+/* bottons */
+.ACTiketButton{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0px;
+    align-items: center;
+}
+
+
+.coursesACButtonWhite,
+.coursesACButtonPink{
+    background-color: white;
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.coursesACButtonPink{
+    background-color: #FCB0CF;
+    color: white;
+}
+.coursesACButtonPink:active,
+.coursesACButtonWhite:active{
+    transform: scale(1.1);
+}
+
+.coursesACButtonMore{
+    box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    border: none;
+    background-color: transparent;
+    margin-top: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+.coursesACButtonMore > img{
+    width: 55px;
+    height: 55px;
+}
+
+/* infoblock */
+
+
+.infoCoursesBlock{
+    position: relative;
+    width: 97.7%;
+    height: 400px;
+    margin-top: 25px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.dropdown-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 25px;
+}
+
+.ACinfoContent{
+    width: 100%;
+    height: 400px;
+    border-radius: 25px;
+    display: flex;
+   
+}
+
+
+.dropdown-content {
+    background: linear-gradient(180deg, #FEF0AB 0%, #FCDAE4 100%);
+    width: 100%;
+    max-height: 40px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: max-height 0.7s ease, opacity 0.6s ease-in-out, box-shadow 0.5s ease-in-out; 
+    opacity: 0; 
+}
+.show1, .show2, .show3, .show4 {
+    max-height: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+
+.infoCoursesBlock > p{
+    text-shadow: 6px 5px 30px rgba(0, 0, 0, 0.15);
+    color: white;
+    font-size: 200px;
+    font-weight: 700;
+}
+
+.ACinfoContent > img{
+    width: 400px;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.ACTextBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.ACinfoTitle{
+    background-color: #FEE440;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+}
+.ACinfoTitle > p{
+    font-size: 25px;
+    font-weight: 700;
+}
+.ACinfoText{
+    width: 710px;
+    margin-left: 30px;
+}
+.ACinfoText > p{
+    white-space: pre-wrap;
+    font-size: 20px;
+    font-weight: 500;
+}
+@media screen and (max-width: 1350px) {
+   
+    .coursesACPinkTicket,
+    .coursesACWhiteTicket{
+        width: 250px;
+        height: 250px;
+    }
+    .coursesACPinkTicket > h2,
+    .coursesACWhiteTicket > h2{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .coursesACPinkTicket > p,
+    .coursesACWhiteTicket > p{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .coursesACButtonWhite,
+    .coursesACButtonPink{
+        width: 180px;
+        height: 50px;
+
+    }
+    .coursesACButtonMore {
+        margin-top: 10px;
+    }
+    .coursesACButtonMore{
+        width: 50px;
+        height: 50px;
+    }
+    .coursesACButtonMore > img{
+        width: 50px;
+        height: 50px;
+    }
+    .ACinfoText{
+        width: 650px;
+    }
+    .ACinfoText > p{
+        white-space: pre-wrap;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+}
+@media screen and (max-width: 1200px) {
+
+    .coursesACPinkTicket, 
+    .coursesACWhiteTicket {
+        width: 230px;
+        height: 230px;
+        margin: 0 10px;
+        padding: 5px;
+    }
+    .coursesACButtonWhite,
+     .coursesACButtonPink {
+        margin-top: 5px;
+    }
+    .coursesACButtonMore {
+        margin-top: 5px;
+    }
+    .ACinfoText {
+        width: 525px;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .coursesACContent {
+        margin-top: 0px;
+    }
+    .coursesACPinkTicket, 
+    .coursesACWhiteTicket {
+        width: 200px;
+        height: 200px;
+        margin: 0 5px;
+    }
+    .coursesACButtonWhite, .coursesACButtonPink {
+        margin-top: 0px;
+    }
+    .coursesACButtonWhite, .coursesACButtonPink {
+        width: 151px;
+        height: 40px;
+    }
+
+    .coursesACPinkTicket > h2,
+    .coursesACWhiteTicket > h2{
+        font-size: 20px;
+    }
+    .coursesACPinkTicket > p,
+    .coursesACWhiteTicket > p{
+        font-size: 16px;
+    }
+    .coursesACPinkTicket > p:nth-last-child(2), 
+    .coursesACWhiteTicket > p:nth-last-child(2) {
+        margin-top: 5px;
+    }
+    .ACTiketButton {
+        margin-top: 5px;
+    }
+    .coursesACButtonMore{
+        width: 45px;
+        height: 45px;
+    }
+    .coursesACButtonMore > img{
+        width: 45px;
+        height: 45px;
+    }
+    .coursesACButtonWhite, .coursesACButtonPink {
+        font-size: 18px;
+    }
+    /* infoblock */
+    .infoCoursesBlock {
+        width: 98.8%;
+        height: 300px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    .show1, .show2, .show3, .show4 {
+        max-height: 300px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        opacity: 1;
+    }
+    .ACinfoContent > img {
+        width: 300px;
+        height: 300px;
+    }
+    .ACinfoText {
+        width: 490px;
+        margin-top: -70px;
+    }
+
+    .ACinfoText > p {
+        font-size: 15px;
+        hyphens: auto;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .coursesACContent {
+        flex-direction: row;
+    }
+    .coursesACTicket {
+        flex-direction: column;
+    }
+    .coursesACPinkTicket, 
+    .coursesACWhiteTicket {
+        margin: 5px 0;
+        align-items: center;
+
+    }
+   
+    .coursesACPinkTicket > p,
+    .coursesACWhiteTicket > p{
+        font-size: 18px;
+    }
+    .coursesACPinkTicket > h2,
+    .coursesACWhiteTicket > h2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .coursesACWhiteTicket > p:nth-last-child(2),
+    .coursesACPinkTicket  > p:nth-last-child(2){
+        margin-top: 8px;
+    }
+    .coursesACWhiteTicket > p:nth-last-child(3),
+    .coursesACPinkTicket  > p:nth-last-child(3){
+        margin-top: 5px;
+    }
+
+    .ACTiketButton {
+        flex-direction: row;
+        margin-top: 10px;
+        align-items: center;
+    }
+    .coursesACButtonMore{
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+    }
+    .coursesACButtonMore > img{
+        width: 40px;
+        height: 40px;
+        transform: rotate(-90deg);
+    }
+   /* infoblock */
+    .infoCoursesBlock{
+        position: relative;
+        width: 280px;
+        height: 98.8%;
+        margin-top: 5px;
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infoCoursesBlock > p{
+        display: none;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 25px;
+    }
+    .dropdown-content {
+        background: linear-gradient(180deg, #FEF0AB 0%, #FCDAE4 100%);
+        width: 40px;
+        max-height: 100000px;
+        overflow: hidden;
+        box-shadow: none;
+        transition: width 0.7s ease, opacity 0.6s ease-in-out, box-shadow 0.5s ease-in-out; 
+        opacity: 0; 
+    }
+
+    .ACinfoContent{
+        width: 280px;
+        height: 830px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .show1, .show2, .show3, .show4 {
+        width: 280px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        opacity: 1;
+    }
+    .ACinfoContent > img{
+        width: 280px;
+        height: 280px;
+        border-radius: 0;
+    }
+    .ACinfoText {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0px;
+        padding: 15px;
+    }
+    .ACinfoText > p {
+        font-size: 16px;
+        hyphens: auto;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    /* tiket */
+    .coursesACPinkTicket, 
+    .coursesACWhiteTicket {
+        width: 180px;
+        height: 180px;
+    }
+    .coursesACPinkTicket > h2,
+    .coursesACWhiteTicket > h2{
+        font-size: 18px;
+    }
+    .coursesACPinkTicket > p,
+    .coursesACWhiteTicket > p{
+        font-size: 14px;
+    }
+    /* button */
+    .ACTiketButton{
+        margin-top: 15px;
+    }
+    
+    .coursesACButtonWhite,
+    .coursesACButtonPink{
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    /* infoblock */
+    .infoCoursesBlock{
+        width: 200px;
+        height: 98.8%;
+        margin-top: 5px;
+        margin-left: 15px;
+    }    
+
+    .ACinfoContent{
+        width: 200px;
+        height: 751px;
+    }
+    .show1, .show2, .show3, .show4 {
+        width: 200px;
+    }
+    .ACinfoContent > img{
+        width: 200px;
+        height: 200px;
+    }
+    .ACinfoText {
+        width: 100%;
+        margin-top: 45px;
+        margin-left: 0px;
+        padding: 10px;
+    }
+    .ACinfoText > p {
+        font-size: 14px;
+        hyphens: auto;
+    }
+
+
+
+}

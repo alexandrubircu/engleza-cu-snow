@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useEffect} from "react";
 import './styles.css';
 import BoockPage1 from '../../assets/images/boockPage1.png'
 import BoockPage2 from '../../assets/images/boockPage2.png'
@@ -9,6 +9,9 @@ import BoockPage5 from '../../assets/images/boockPage5.png'
 import Slider from "react-slick";
 
 const TravelGuide = () =>{
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     const settings = {
         dots: true,
         infinite: true,

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles.css';
 import expereanceImage from '../../assets/images/expereanceImage.png'
 import smartstartkidsacademyImage from '../../assets/images/smartstartkidsacademyImage.png'
@@ -10,24 +10,27 @@ import oratoricaImage from '../../assets/images/oratoricaImage.png'
 import expereancelineImage from '../../assets/images/expereancelineImage.png'
 
 const ExpereanceBlock = () => {
+    const [loading, setLoading] = useState(true);
+
     return(
         <div className="expereanceBlock">
-            <div className="expereanceLeftBlock">
-                <img src={expereanceImage} alt='' width={500} height={500}/>
-            </div>
-            <div className="expereanceRightBlock">
-                <div className="expereanceRightContent">
-                    <div className="expereanceRightContentColum">
-                        <div className="expereanceRightTitle"><h1>Experiență</h1></div>
-                        <img src={expereancelineImage} alt=''/>
-                        <div className="expereanceRightContentRow"><img src={smartstartkidsacademyImage} alt='' width={50} height={50}/> <p>Smart Start Kids Academy <br/> <span className="bold">EFL Teacher</span></p></div>
-                        <div className="expereanceRightContentRow"><img src={nextlanguagecentreImage} alt='' width={50} height={50}/> <p>Next Language Centre  <br/> <span className="bold">ESL Teacher</span></p></div>
-                        <div className="expereanceRightContentRow"><img src={ipltImage} alt='' width={50} height={50}/> <p>IPLT «A. Puskin» <br/> <span className="bold">English Teacher</span></p></div>
-                        <div className="expereanceRightContentRow"><img src={fantasticenglishImage} alt='' width={50} height={50}/> <p>Fantastic English  <br/> <span className="bold">TOEFL ibt / FCE Instructor</span></p></div>
-                        <div className="expereanceRightContentRow"><img src={fantasticenglishImage} alt='' width={50} height={50}/> <p>Fantastic English  <br/> <span className="bold">Head of International Exams Department</span></p></div>
-                        <div className="expereanceRightContentRow"><img src={ritaenglezaImage} alt='' width={50} height={50}/> <p>Rita Engleza <br/> <span className="bold">Online Courses Lead Methodologist</span></p></div>
-                        <div className="expereanceRightContentRow"><img src={oratoricaImage} alt='' width={50} height={50}/> <p>Oratorica  <br/> <span className="bold">ESL Teacher / BAC Instructor</span></p></div>
-                    </div>
+            <div className="expereanceContent">
+                <div className="expereanceImage">
+                    {loading && <div className="skeletonExpereance">
+                        <div></div>
+                    </div> }
+                    <img src={expereanceImage} onLoad={() => setLoading(false)} alt='' width={500} height={500}/>  
+                </div>
+                <div className="expereanceTextBlock">
+                    <h1>Experiență</h1>
+                    <div className="expereanceTextRow"><img src={smartstartkidsacademyImage} alt=''/> <p>Smart Start Kids Academy <br/> <span>EFL Teacher</span></p></div>
+                    <div className="expereanceTextRow"><img src={nextlanguagecentreImage} alt=''/> <p>Next Language Centre  <br/> <span>ESL Teacher</span></p></div>
+                    <div className="expereanceTextRow"><img src={ipltImage} alt='' width={50}/> <p>IPLT «A. Puskin» <br/> <span>English Teacher</span></p></div>
+                    <div className="expereanceTextRow"><img src={fantasticenglishImage} alt=''/> <p>Fantastic English  <br/> <span>TOEFL ibt / FCE Instructor</span></p></div>
+                    <div className="expereanceTextRow"><img src={fantasticenglishImage} alt=''/> <p>Fantastic English  <br/> <span>Head of International <br/> Exams Department</span></p></div>
+                    <div className="expereanceTextRow"><img src={ritaenglezaImage} alt=''/> <p>Rita Engleza <br/> <span>Online Courses <br/> Lead Methodologist</span></p></div>
+                    <div className="expereanceTextRow"><img src={oratoricaImage} alt=''/> <p>Oratorica  <br/> <span>ESL Teacher / BAC Instructor</span></p></div>
+                    <img src={expereancelineImage} alt=''/>
                 </div>
             </div>
         </div>

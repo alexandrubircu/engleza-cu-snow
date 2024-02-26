@@ -1,31 +1,27 @@
 .whyBlock{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.whyBlockContent{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    margin-top: 100px;
-    height: fit-content;
 }
-.whyblockLeft{
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: flex-end;
-}
-.whyblockleftText{
+.whyBlockText{
     display: flex;
     flex-direction: column;
     width: fit-content;
     height: fit-content;
-    align-items: center;
 }
-.whyblockleftText > h1{
-    margin-bottom: 15px;
+.whyBlockText > h1{
     font-size: 40px;
+    font-weight: 700;
 }
 .whyBlockContentRowPink ,
 .whyBlockContentRowWhite ,
 .whyBlockContentRowYellow{
-    color: white;
     border-radius: 10px;
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -35,91 +31,129 @@
     padding: 15px;
     align-items: center;
 }
-.whyBlockContentRowPink{
-    background-color: #FAAFCE;
-}
-.whyBlockContentRowWhite{
-    background-color: white;
-}
-.whyBlockContentRowYellow{
-    background-color: #FEE14E;
-}
-.whyBlocContentTextRow >h2{
+.whyBlockContentRowPink{background-color:  #FCD8E7;}
+.whyBlockContentRowWhite{background-color: white;}
+.whyBlockContentRowYellow{background-color: #FEF1A8;}
+
+.whyBlockTextList > h2{
     font-size: 22px;
     font-weight: 700;
 }
-.whyBlocContentTextRow >li{
-    font-size: 20px;
+
+.whyBlockTextList h2 span {
+    font-size: 18px;
     font-weight: 500;
 }
 
-
-
-.WhyblockRight{
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: flex-start;
-}
-.WhyblockRight > img{
-    width: 570px;
-    height: 570px;
-    margin-left: 18px;
+.whyBlockContent > .whyBlockImg > img{
+    width: 500px;
+    height: 500px;
     border-radius: 100%;
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
+    margin-left: 50px;
+    position: relative;
+    top: 60px;
 }
 
-@media screen and (max-width: 1250px) {
-    .whyBlock {
-        margin-top: 50px;
-    }
-    .WhyblockRight > img{
-        width: 540px;
-        height: 540px;
-        margin-left: 20px;
-    }
-    .whyBlockContentRowPink ,
-    .whyBlockContentRowWhite ,
-    .whyBlockContentRowYellow{
-        width: 565px;
-    }
+.whyBlockImg{
+    position: relative;
 }
+
+.skeletonWhy{
+    position: absolute;
+    top: 60px;
+    width: 500px;
+    height: 500px;
+    z-index: 9999;
+    margin-left: 50px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.skeletonWhy > div {
+    background-color: rgba(0, 0, 0, 0.11);
+    height: 100%;
+    border-radius: 100%;
+    animation: skeleton-loading 2s ease-in-out 0.5s infinite;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        opacity: 1;
+    }
+    
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
 
 @media screen and (max-width: 1200px) {
-    .whyblockLeft{
-        width: 100%;
-        justify-content: center;
+    .whyBlockText{
+        position: relative;
+        z-index: 99999;
+        margin-right: 200px;
     }
-    .WhyblockRight{display: none;}
-}
-
-@media screen and (max-width: 850px) {
-    .whyblockleftText > h1{
-        font-size: 35px;
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-    .whyBlock {
-        margin-top: 20px;
-    }
-    .whyblockleftText > h1{
-        font-size: 30px;
-        width: 300px;
-        text-align: center;
+    .whyBlockText > h1{
+        width: fit-content;
     }
     .whyBlockContentRowPink ,
     .whyBlockContentRowWhite ,
     .whyBlockContentRowYellow{
-        width: 380px;
+        width: 500px;
     }
-    .whyBlocContentTextRow >h2{
+    .whyBlockContent{
+        position: relative;
+    }
+    .whyBlockImg{
+        margin-top: 10px;
+        margin-left: 290px;
+        position: absolute;
+    }
+    .whyBlockContent > .whyBlockImg > img, .skeletonWhy{
+        width: 450px;
+        height: 450px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .whyBlockContent > .whyBlockImg > img, .skeletonWhy{
+        display: none;
+    }
+    .whyBlockText{
+        margin-right: 0;
+    }
+    .whyBlockText > h1{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .whyBlockContentRowPink ,
+    .whyBlockContentRowWhite ,
+    .whyBlockContentRowYellow{
+        width: 520px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .whyBlock{margin-bottom: 50px;}
+    .whyBlockText > h1{
+        font-size: 30px;
+        font-weight: 700;
+        width: 300px;
+    }
+    .whyBlockTextList > h2{
         font-size: 20px;
         font-weight: 700;
     }
-    .whyBlocContentTextRow >li{
+    
+    .whyBlockTextList h2 span {
         font-size: 16px;
         font-weight: 500;
     }
+    .whyBlockContentRowPink ,
+    .whyBlockContentRowWhite ,
+    .whyBlockContentRowYellow{
+        width: 390px;
+    }
 }
+

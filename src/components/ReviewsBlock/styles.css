@@ -1,16 +1,17 @@
+
 .reviews{
     display: flex;
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
-    margin: 50px 0;
+    margin-bottom: 50px;
 }
 .reviewsContetn{
-    background-color: white;
+    background: linear-gradient(180deg, #FEF1A8 0%, #FCD8E7 99.99%, rgba(217, 217, 217, 0.00) 100%);
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 6px 5px 30px 0px rgba(0, 0, 0, 0.15);
     width: 1150px;
     height: fit-content;
@@ -23,40 +24,46 @@
     margin-top: 20px;
     margin-bottom: 15px;
 }
-
-
+.reviewsTitle > h1{
+    font-size: 40px;
+}
 
 .reviewsSliderview{
-    width: 1000px;
-    height: 580px;
+    width: 1005px;
+    height: 375px;
 }
-.reviewsTiket{
 
+.reviewsTiket{
     display: flex !important;
     align-items: center;
     justify-content: center;
-    margin-left: 0px;
     height: 100%;
 }
-.reviewsTiketContent{
-    background-color: white;
+
+.reviewsTiket p {  
+    hyphens: auto;
+    white-space: normal;
+    height: 250px;
+    padding: 0 25px;
+    padding-top: 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.reviewsTiket > div {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 6px 5px 15px 0px rgba(0, 0, 0, 0.15);
     width: 280px;
-    height: 500px;
+    height: 300px;
     margin: 20px 0;
     align-items: center;
     position: relative;
-
 }
 .reviewsTiketTopContent{
     display: flex;
-    background-color: white;
     border-radius: 10px;
     width: 100%;
-
 }
 .reviewsTiketTopContent >img:first-child{
     width: 25px;
@@ -64,7 +71,7 @@
     margin-top: 20px;
     margin-left: 20px;
 }
-.reviewsTiketTopContent >img:nth-child(2){
+.reviewsTiketTopContent > div >img{
     position: absolute;
     border-radius: 50px;
     box-shadow: 6px 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -74,30 +81,19 @@
     height: 100px;
 }
 
-.reviewsTiketContent > p {
-    display: flex;
-    height: 400px;
-    padding:15px;
-    align-items: center;
-    font-size: 16px;
-    
 
+
+.reviewsYellowTiketContent{
+    background-color: rgba(254, 228, 64, 0.5);
 }
-.reviewsuserButton{
-    background-color: #FBB1CF;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 6px 5px 15px 0px rgba(0, 0, 0, 0.15);
-    width: 190px;
-    height: 60px;
-    
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 30px;
+.reviewsWhiteTiketContent{
+    background-color: white;
+}
+.reviewsPinkTiketContent{
+    background-color:  rgba(251, 177, 207, 0.5);
 }
 
-/* setings slik */
+
 .reviewsSliderview .slick-dots {
     bottom: -20px !important;
     z-index: 99999;
@@ -115,7 +111,7 @@
 
 
 
-.testbutton.next, .testbutton.prev {
+.nextButton.next, .prevButton.prev {
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -131,7 +127,7 @@
 }
  
   
-.testbutton.next > p, .testbutton.prev > p {
+.nextButton.next > p, .prevButton.prev > p {
     color: #ed74a4 ;
     font-size: 40px;
     font-weight: 700;
@@ -140,9 +136,13 @@
     margin-bottom: 10px;
 }
   
-.testbutton.next:hover > p, .testbutton.prev:hover > p {
+.nextButton.next:hover > p, .prevButton.prev:hover > p {
     opacity: 0.8;
 }
+.nextButton.next:active, .prevButton.prev:active {
+    background-color: #FFF5B9;  
+}
+
 
 .reviewsSliderview .slick-prev {
     left: -50px;
@@ -153,3 +153,88 @@
 .slick-next:before, .slick-prev:before {
     display: none;
 }
+.skeletonReviews{
+    position: absolute;
+    left: 39.5px;
+    top: -20.7px;
+    width: 100px;
+    height: 100px;
+    z-index: 9999;
+    margin-left: 50px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.skeletonReviews > div {
+    background-color: rgba(0, 0, 0, 0.11);
+    height: 100%;
+    border-radius: 100%;
+    animation: skeleton-loading 2s ease-in-out 0.5s infinite;
+}
+ @media screen and (max-width: 1200px) {
+    .reviewsSliderview {
+        width: 80%; 
+        margin: 0 auto; 
+    }
+    .reviewsSliderview {
+        width: 660px; 
+        margin: 0 auto; 
+    }
+    .reviewsContetn{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .reviewsTitle > h1{
+        font-size: 35px;
+    }
+    .reviewsSliderview {
+        width: 450px; 
+        margin: 0 auto; 
+    }
+    .reviewsContetn{
+        width: 450px;
+    }
+    .reviewsSliderview .slick-prev {
+        left: 15px;
+    }
+    .reviewsSliderview .slick-next {
+        right: 15px;
+    }
+   
+}
+
+
+@media screen and (max-width: 600px) {
+    .reviewsTitle > h1{
+        font-size: 30px;
+    }
+    .reviewsSliderview {
+        width: 380px; 
+        margin: 0 auto; 
+    }
+    .reviewsContetn{
+        width: 380px;
+    }
+    .reviewsTiket > div {
+        width: 250px;
+    }
+
+
+    .reviewsSliderview .slick-prev {
+        left: 10px;
+    }
+    .reviewsSliderview .slick-next {
+        right: 10px;
+    }
+    .nextButton.next, .prevButton.prev {
+        width: 45px;
+        height: 150px;
+    }
+    .nextButton.next > p, .prevButton.prev > p {
+        font-size: 30px;
+    }
+   
+   
+ } 

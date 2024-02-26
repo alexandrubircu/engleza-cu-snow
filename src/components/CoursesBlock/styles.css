@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 .gidTicketMobile{display: none;}
 .coursesTopBlock{
@@ -144,7 +145,7 @@
     font-size: 20px;
 }
 
-.gidTicketContent > img{
+.gidTicketContent > .gidTicketImage > img{
     width: 240px;
     height: 300px;
     border-radius: 10px;
@@ -156,6 +157,41 @@
     align-items: center;
     justify-content: center;
 }
+
+.gidTicketImage{
+    position: relative;
+}
+
+.skeletonGid{
+    position: absolute;
+    top: 0;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.skeletonGid > div {
+    background-color: rgba(0, 0, 0, 0.11);
+    height: 100%;
+    border-radius: 10px;
+    animation: skeleton-loading 2s ease-in-out 0.5s infinite;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        opacity: 1;
+    }
+    
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+
 @media screen and (max-width: 1250px) {
     .coursesTicketYellow {
         width: 250px;
@@ -305,6 +341,23 @@
         align-items: center;
         justify-content: flex-end;
     }
+    
+    .skeletonGidMobile{
+        position: absolute;
+        z-index: 999999;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .skeletonGidMobile > div {
+        background-color: rgba(0, 0, 0, 0.11);
+        height: 100%;
+        border-radius: 10px;
+        animation: skeleton-loading 2s ease-in-out 0.5s infinite;
+    }
+    
     .gidTicketRightContentMobile >img{
         border-radius: 10px;
         border: 1px solid #FFF;
@@ -314,6 +367,9 @@
     }
 }
 @media screen and (max-width: 600px){
+    .coursesBlock{
+        margin-bottom: 50px;
+    }
     .coursesTopBlock >h1 {
         font-size: 30px;
     }
@@ -371,7 +427,12 @@
     .gidTicketLeftContentMobile >p{
        display: none;
     }
-    
+
+    .skeletonGidMobile{
+        width: 180px;
+        height: 180px;
+    }
+
     .gidTicketRightContentMobile >img {
         
         width: 180px;

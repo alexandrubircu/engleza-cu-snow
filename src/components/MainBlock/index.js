@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import './styles.css';
 import mainAvatar from '../../assets/images/mainAvatar.png'
 import mainImage from '../../assets/images/mainImage.png'
@@ -6,34 +6,66 @@ import mainFaceboock from '../../assets/images/mainFaceboock.png'
 import mainInstagram from '../../assets/images/mainInstagram.png'
 import mainTiktok from '../../assets/images/mainTiktok.png'
 import mainYoutube from '../../assets/images/mainYoutube.png'
+import emojiEyes from '../../assets/images/emojiEyes.svg'
+import mainVideo from '../../assets/video/mainVideo.MOV'
+const MainBlock = ({scrollToElement}) => {
+    const [loading, setLoading] = useState(true);
+    const[showBlock, setShowBlock] = useState(0);
 
+    const videoEl = useRef(null);
 
+    useEffect(() => {
+        const playVideo = async () => {
+            try {
+                await videoEl.current.play();
+            } catch (error) {
+                console.log('');
+            }
+        };
+        if (videoEl.current){
+            if (showBlock) {
+                videoEl.current.currentTime = 0;
+                playVideo();
+            } else {
+                videoEl.current.pause();
+            }
+        }
+    }, [showBlock]);
 
-const MainBlock = () => {
     return (
         <div className="mainBlock" id="main">
-            <div className="leftBlock">
-                <div className="leftBlockContent">
-                    <img src={mainAvatar} alt='' width={200} height={200} />
-                    <h1>Engleza cu Snow</h1> 
-                        <div className="webLinKsMobile">
-                            <a href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer"><img src={mainFaceboock} alt='' width={50} height={50}/></a>
-                            <a href="https://www.instagram.com/english_with_snow/" target="_blank" rel="noreferrer"><img src={mainInstagram} alt='' width={50} height={50}/></a>
-                            <a href="https://www.tiktok.com/@engleza_cu_snow" target="_blank" rel="noreferrer"><img src={mainTiktok} alt='' width={50} height={50}/></a>
-                            <a href="https://www.youtube.com/channel/UCgxXVAjWnAXg-BpXZbF9b_A" target="_blank" rel="noreferrer"><img src={mainYoutube} alt='' width={50} height={50}/></a>
-                        </div>
-                    <p>Profesoară de 14 ani cu peste 1 000 de studenți care deja vorbesc engleză cu mine și susțin examene internaționale și naționale.</p>
-                    <a href="#courses"><button className="mainButton"><p>Despre lecții</p></button></a>
+            <div className="mainBlockContent">
+                <div className="imgBlock">
+                    {loading && <div className="skeleton">
+                        <div></div>
+                    </div> }
+                    <video ref={videoEl} onEnded={() => setShowBlock(0)} style={showBlock ? {transform: 'scale(1)'} : {transform: "scale(0)"}} src={mainVideo}></video>
+                    <img 
+                        onLoad={() => setLoading(false)} 
+                        src={mainImage}
+                        alt=''/>
                 </div>
-            </div>
-            <div className="rightBlock">
-                <div className="rightContent">
-                <img src={mainImage} alt='' width={760} height={1000}/>
-                    <div className="webLinKs">
-                        <a href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer"><img src={mainFaceboock} alt='' width={50} height={50}/></a>
-                        <a href="https://www.instagram.com/english_with_snow/" target="_blank" rel="noreferrer"><img src={mainInstagram} alt='' width={50} height={50}/></a>
-                        <a href="https://www.tiktok.com/@engleza_cu_snow" target="_blank" rel="noreferrer"><img src={mainTiktok} alt='' width={50} height={50}/></a>
-                        <a href="https://www.youtube.com/channel/UCgxXVAjWnAXg-BpXZbF9b_A" target="_blank" rel="noreferrer"><img src={mainYoutube} alt='' width={50} height={50}/></a>
+                <div className="mainTextBlock">
+                    <div className="avatarMbileBlock">
+                        {loading && <div className="skeletonMobile">
+                            <div></div>
+                        </div> }
+                        <img src={mainAvatar} onLoad={() => setLoading(false)} alt=''/>
+                    </div>
+                    <h1>Invață<br/>Engleza cu <span className="snow">Snow</span></h1>
+                    <p>Deschideți ușa spre cunoaștere! Împreună cu Snow, fiecare lecție devine o aventură în lumea englezei. Apăsați butonul de mai jos și începeți călătoria voastră.</p>
+                    <div className="mainWebLinKs">
+                        <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainFaceboock} alt=''/></a>
+                        <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainInstagram} alt=''/></a>
+                        <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainTiktok} alt=''/></a>
+                        <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainYoutube} alt=''/></a>
+                    </div>
+                    <div className="mainButtonBlock">
+                        <button className="mainButtonCourses" onClick={scrollToElement}>Descopera Cursurile</button>
+                        <button className="mainButtonVideo" onClick={() => setShowBlock(!showBlock)}>
+                            <p>{showBlock ? "Inchide" : "Apasama!"}</p>
+                            <img src={emojiEyes} alt=''/>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -41,3 +73,4 @@ const MainBlock = () => {
     )
 }
 export default MainBlock
+

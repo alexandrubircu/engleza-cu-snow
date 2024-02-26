@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles.css'
 import gidImage from "../../assets/images/gidImage.png"
 import gidmobileImage from '../../assets/images/gidmobileImage.png'
 import { Link } from "react-router-dom";
 
-const CoursesBlock = () => {
+const CoursesBlock = ({targetElementRef}) => {
+    const [loading, setLoading] = useState(true);
     return(
-        <div className="coursesBlock" id="courses">
+        <div className="coursesBlock" id="courses" ref={targetElementRef}>
             <div className="coursesTopBlock">
                 <h1>Invață Engleza cu <span className="snow">Snow</span></h1>
             </div>
@@ -73,7 +74,12 @@ const CoursesBlock = () => {
                 </div>   
                 <div className="gidTicket">
                     <div className="gidTicketContent">
-                        <img src={gidImage} alt=''/>
+                        <div className="gidTicketImage">
+                            {loading && <div className="skeletonGid">
+                                <div></div>
+                            </div>}
+                            <img src={gidImage} onLoad={() => setLoading(false)} alt=''/>
+                        </div>
                         <p>Ghidul este în format<br/> electronic (PDF).</p>
                         <Link to="/TravelGuide"><button className="coursesButtonWhite">AFLA DETALII</button></Link>
                         <p>29 EUR</p>
@@ -88,7 +94,10 @@ const CoursesBlock = () => {
                             <p>29 EURO</p>
                         </div>
                         <div className="gidTicketRightContentMobile">
-                            <img src={gidmobileImage} alt=''/>
+                            {loading && <div className="skeletonGidMobile">
+                                <div></div>
+                            </div>}
+                            <img src={gidmobileImage} onLoad={() => setLoading(false)} alt=''/>
                         </div>
                     </div>
                 </div> 
