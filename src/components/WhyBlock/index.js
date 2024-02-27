@@ -9,25 +9,25 @@ const WhyBlock = () => {
         <div className="whyBlock">
            <div className="whyBlockContent">
             <div className="whyBlockText">
-                <h1>De ce sa alegi cursurile lui <span className="snow">Snow</span></h1>
+                <h1>De ce sa alegi cursurile cu <span className="snow">Snow</span></h1>
                 <div className="whyBlockContentRowPink">
                     <div className="whyBlockTextList">
-                        <h2>Rămâi motivat<br/><span>Misiunea mea este să fac învățarea limbilor străine accesibilă tuturor</span></h2>
+                        <h2>Cursurile au loc online pe Zoom<br/><span>Cursurile au loc online, pe Zoom, ceea ce înseamnă că nu trebuie să te deplasezi nicăieri. Toate orele live se înregistrează și după lecție mai poți viziona ora ca să asimila materia mai bine</span></h2>
                     </div>
                 </div>
                 <div className="whyBlockContentRowWhite">
                     <div className="whyBlockTextList">
-                        <h2>Descoperă oportunitatea cu Snow<br/><span>Cursurile de engleză transformă procesul de învățare într-o experiență deschisă și prietenoasă pentru toți cei dornici să-și dezvolte abilitățile lingvistice.</span></h2>
+                        <h2>Exersarea comunicării în situații reale<br/><span>La lecțiile mele vorbești engleza la FIECARE lecție. Plus la asta, în afară de gramatică și vocabular, primești și sarcini de vorbire pentru acasă.</span></h2>
                     </div>
                 </div>
                 <div className="whyBlockContentRowYellow">
                     <div className="whyBlockTextList">
-                        <h2>Rămâi inspirat cu Snow<br/><span>Cursurile de engleză sunt cheia spre reușita ta în această călătorie a cunoașterii.</span></h2>
+                        <h2>Feedback personalizat<br/><span>Primești feedback și recomandări personalizate după teste și exerciții de vorbire pentru a întări aspectele de care anume tu ai nevoie.</span></h2>
                     </div>
                 </div>
                 <div className="whyBlockContentRowWhite">
                     <div className="whyBlockTextList">
-                        <h2>Alege excelența alături de Snow<br/><span>Cursurile de engleză sunt create pentru a face învățarea limbii o călătorie captivantă și accesibilă, transformându-te în vorbitor fluent și sigur în sine.</span></h2>
+                        <h2>Certificat de absolvire<br/><span>La finalizarea cursurilor primești diplomă care confirmă finalizarea cu succes a cursului ales.</span></h2>
                     </div>
                 </div>
             </div>

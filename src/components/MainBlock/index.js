@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import './styles.css';
 import mainAvatar from '../../assets/images/mainAvatar.png'
-import mainImage from '../../assets/images/mainImage.png'
+import mainImage from '../../assets/images/mainImage.jpeg'
 import mainFaceboock from '../../assets/images/mainFaceboock.png'
 import mainInstagram from '../../assets/images/mainInstagram.png'
 import mainTiktok from '../../assets/images/mainTiktok.png'
@@ -52,8 +52,8 @@ const MainBlock = ({scrollToElement}) => {
                         </div> }
                         <img src={mainAvatar} onLoad={() => setLoading(false)} alt=''/>
                     </div>
-                    <h1>Invață<br/>Engleza cu <span className="snow">Snow</span></h1>
-                    <p>Deschideți ușa spre cunoaștere! Împreună cu Snow, fiecare lecție devine o aventură în lumea englezei. Apăsați butonul de mai jos și începeți călătoria voastră.</p>
+                    <h1>Învață<br/>Engleza cu <span className="snow">Snow</span></h1>
+                    <p>Deschide ușa spre cunoaștere! Împreună cu Snow vei vorbi engleza ușor din prima lecție. Apăsă butonul de mai jos și începe călătoria ta.</p>
                     <div className="mainWebLinKs">
                         <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainFaceboock} alt=''/></a>
                         <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainInstagram} alt=''/></a>
@@ -61,9 +61,9 @@ const MainBlock = ({scrollToElement}) => {
                         <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainYoutube} alt=''/></a>
                     </div>
                     <div className="mainButtonBlock">
-                        <button className="mainButtonCourses" onClick={scrollToElement}>Descopera Cursurile</button>
+                        <button className="mainButtonCourses" onClick={scrollToElement}>Vreu să învăț engleza</button>
                         <button className="mainButtonVideo" onClick={() => setShowBlock(!showBlock)}>
-                            <p>{showBlock ? "Inchide" : "Apasama!"}</p>
+                            <p>{showBlock ? "Închide-mă 🤫" : "Apasă-mă!"}</p>
                             <img src={emojiEyes} alt=''/>
                         </button>
                     </div>

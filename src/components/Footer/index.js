@@ -18,7 +18,7 @@ const Footer = () => {
                 <a href="https://www.youtube.com/channel/UCgxXVAjWnAXg-BpXZbF9b_A" target="_blank" rel="noreferrer"><img src={footeryoutubeImage} alt='' width={25} height={25}/></a>
             </div>
             <div className="bottomFooterBlock">
-                <p>© 2024 Snow. Toate drepturile rezervate.</p>
+                <p>© din 2008-2024 Compania Engleza cu Snow.Toate drepturile rezervate.<br/> Societatea cu Răspundere Limitată ENGLISH CUSNOW, 1023600021904, 10/05/2023</p>
             </div>
            </div>
         </div>

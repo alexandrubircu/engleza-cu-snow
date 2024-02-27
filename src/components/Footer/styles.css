@@ -2,7 +2,7 @@
     background: linear-gradient(91deg, #FEEFAD 0%, #FCD8E7 99.92%, rgba(255, 255, 255, 0.00) 100%);
     display: flex;
     width: 100%;
-    height: 90px;
+    height: fit-content;
     flex-direction: column;
     align-items: center;
     justify-content: center;    
@@ -27,6 +27,7 @@
     width: fit-content;
     align-items: flex-end;
     justify-content: flex-end;
+    margin-top: 15px;
 }
 .leftFooterLinks > a:not(:first-child){
     margin-left: 10px;
@@ -43,11 +44,14 @@
     margin-right: 10px;
 }
 .bottomFooterBlock{
+
     display: flex;
     width: 100%;
     height: 30%;
     align-items: center;
     justify-content: center;
+    margin-bottom: 15px;
+    text-align: center;
 }
 .bottomFooterBlock >p{
     color: gray;

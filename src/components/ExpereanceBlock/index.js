@@ -23,13 +23,15 @@ const ExpereanceBlock = () => {
                 </div>
                 <div className="expereanceTextBlock">
                     <h1>Experiență</h1>
-                    <div className="expereanceTextRow"><img src={smartstartkidsacademyImage} alt=''/> <p>Smart Start Kids Academy <br/> <span>EFL Teacher</span></p></div>
-                    <div className="expereanceTextRow"><img src={nextlanguagecentreImage} alt=''/> <p>Next Language Centre  <br/> <span>ESL Teacher</span></p></div>
-                    <div className="expereanceTextRow"><img src={ipltImage} alt='' width={50}/> <p>IPLT «A. Puskin» <br/> <span>English Teacher</span></p></div>
-                    <div className="expereanceTextRow"><img src={fantasticenglishImage} alt=''/> <p>Fantastic English  <br/> <span>TOEFL ibt / FCE Instructor</span></p></div>
-                    <div className="expereanceTextRow"><img src={fantasticenglishImage} alt=''/> <p>Fantastic English  <br/> <span>Head of International <br/> Exams Department</span></p></div>
-                    <div className="expereanceTextRow"><img src={ritaenglezaImage} alt=''/> <p>Rita Engleza <br/> <span>Online Courses <br/> Lead Methodologist</span></p></div>
+                   
                     <div className="expereanceTextRow"><img src={oratoricaImage} alt=''/> <p>Oratorica  <br/> <span>ESL Teacher / BAC Instructor</span></p></div>
+                    <div className="expereanceTextRow"><img src={ritaenglezaImage} alt=''/> <p>Rita Engleza <br/> <span>Online Courses <br/> Lead Methodologist</span></p></div>
+                    <div className="expereanceTextRow"><img src={fantasticenglishImage} alt=''/> <p>Fantastic English  <br/> <span>Head of International <br/> Exams Department</span></p></div>
+                    <div className="expereanceTextRow"><img src={fantasticenglishImage} alt=''/> <p>Fantastic English  <br/> <span>TOEFL ibt / FCE Instructor</span></p></div>
+                    <div className="expereanceTextRow"><img src={ipltImage} alt='' width={50}/> <p>IPLT «A. Puskin» <br/> <span>English Teacher</span></p></div>
+                    <div className="expereanceTextRow"><img src={nextlanguagecentreImage} alt=''/> <p>Next Language Centre  <br/> <span>ESL Teacher</span></p></div>
+                    <div className="expereanceTextRow"><img src={smartstartkidsacademyImage} alt=''/> <p>Smart Start Kids Academy <br/> <span>EFL Teacher</span></p></div>
+                    
                     <img src={expereancelineImage} alt=''/>
                 </div>
             </div>
