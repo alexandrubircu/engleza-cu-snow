@@ -7,10 +7,12 @@ import mainInstagram from '../../assets/images/mainInstagram.png'
 import mainTiktok from '../../assets/images/mainTiktok.png'
 import mainYoutube from '../../assets/images/mainYoutube.png'
 import emojiEyes from '../../assets/images/emojiEyes.svg'
+import emojiShushing from '../../assets/images/emojiShushing.svg'
 import mainVideo from '../../assets/video/mainVideo.MOV'
 const MainBlock = ({scrollToElement}) => {
     const [loading, setLoading] = useState(true);
     const[showBlock, setShowBlock] = useState(0);
+    const [showEmoji, setShowEmoji] = useState(false); 
 
     const videoEl = useRef(null);
 
@@ -62,10 +64,23 @@ const MainBlock = ({scrollToElement}) => {
                     </div>
                     <div className="mainButtonBlock">
                         <button className="mainButtonCourses" onClick={scrollToElement}>Vreu să învăț engleza</button>
-                        <button className="mainButtonVideo" onClick={() => setShowBlock(!showBlock)}>
-                            <p>{showBlock ? "Închide-mă 🤫" : "Apasă-mă!"}</p>
-                            <img src={emojiEyes} alt=''/>
+                        
+                        
+                        <button className="mainButtonVideo" onClick={() => {
+                            setShowBlock(!showBlock);
+                            setShowEmoji(!showEmoji); 
+                        }}>
+                            <p>{showBlock ? "Închide-mă" : "Apasă-mă!"}</p>
+
+                            <img src={showEmoji ? emojiShushing : emojiEyes} alt=''/>
                         </button>
+                        {/* <button className="mainButtonVideo" onClick={() => setShowBlock(!showBlock)}>
+
+
+                            <p>{showBlock ? "Închide-mă 🤫" : "Apasă-mă!"}</p>
+
+                            <img src={emojiEyes} alt=''/>
+                        </button> */}
                     </div>
                 </div>
             </div>
