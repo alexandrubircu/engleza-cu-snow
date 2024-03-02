@@ -58,9 +58,9 @@ const MainBlock = ({scrollToElement}) => {
                     <p>Deschide ușa spre  cunoștințe! Împreună cu Snow vei vorbi engleza ușor din prima lecție. Apăsă butonul de mai jos și începe călătoria ta.</p>
                     <div className="mainWebLinKs">
                         <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainFaceboock} alt=''/></a>
-                        <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainInstagram} alt=''/></a>
-                        <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainTiktok} alt=''/></a>
-                        <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainYoutube} alt=''/></a>
+                        <a className="link" href="https://www.instagram.com/engleza_cu_snow/" target="_blank" rel="noreferrer" ><img src={mainInstagram} alt=''/></a>
+                        <a className="link" href="https://www.tiktok.com/@engleza_cu_snow" target="_blank" rel="noreferrer" ><img src={mainTiktok} alt=''/></a>
+                        <a className="link" href="https://www.youtube.com/channel/UCgxXVAjWnAXg-BpXZbF9b_A" target="_blank" rel="noreferrer" ><img src={mainYoutube} alt=''/></a>
                     </div>
                     <div className="mainButtonBlock">
                         <button className="mainButtonCourses" onClick={scrollToElement}>Vreu să învăț engleza</button>
