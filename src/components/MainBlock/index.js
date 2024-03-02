@@ -55,7 +55,7 @@ const MainBlock = ({scrollToElement}) => {
                         <img src={mainAvatar} onLoad={() => setLoading(false)} alt=''/>
                     </div>
                     <h1>Învață<br/>Engleza cu <span className="snow">Snow</span></h1>
-                    <p>Deschide ușa spre cunoaștere! Împreună cu Snow vei vorbi engleza ușor din prima lecție. Apăsă butonul de mai jos și începe călătoria ta.</p>
+                    <p>Deschide ușa spre  cunoștințe! Împreună cu Snow vei vorbi engleza ușor din prima lecție. Apăsă butonul de mai jos și începe călătoria ta.</p>
                     <div className="mainWebLinKs">
                         <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainFaceboock} alt=''/></a>
                         <a className="link" href="https://www.facebook.com/people/Engleza-cu-Snow/100089484220418/" target="_blank" rel="noreferrer" ><img src={mainInstagram} alt=''/></a>

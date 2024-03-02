@@ -34,7 +34,7 @@
 .mainTextBlock{
     display: flex;
     flex-direction: column;
-    width: 635px;
+    width: 645px;
     margin-top: -95px;
     margin-left: 25px;
 }
