@@ -62,14 +62,26 @@
 
 .TravelGuideBoockBlock .slick-prev,
 .TravelGuideBoockBlock .slick-next {
-  width: 50%;
-  height: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 0;
-  z-index: 1; 
+    
+    width: 50px; 
+    height: 50px; 
+    /* background: transparent; */
+    background-color: #ed74a4;
+    border: none;
+    outline: none;
+    font-size: 0;
+    z-index: 1; 
+    margin-left: 16px;
+    margin-right: 16px;
 }
+.TravelGuideBoockBlock .slick-prev{
+    border-radius: 0 20px 20px 0;
+}
+.TravelGuideBoockBlock .slick-next {
+    border-radius: 20px 0 0 20px;
+}
+
+
 .TravelGuideBoockBlock .slick-prev:before,
 .TravelGuideBoockBlock .slick-next:before {
   font-size: 24px; 
@@ -77,7 +89,8 @@
 }
 .TravelGuideBoockBlock .slick-prev:before,
 .TravelGuideBoockBlock .slick-next:before{
-    color: transparent;
+    /* color: transparent; */
+    background-color: #ed74a4
 }
 .TravelGuideInfoBlock{
     display: flex;
