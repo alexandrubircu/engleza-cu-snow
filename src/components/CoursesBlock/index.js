@@ -46,7 +46,11 @@ const CoursesBlock = ({targetElementRef}) => {
                         <div className="coursesTicketWhite">
                             <div className="coursesTicketContentWhite">
                                 <h2>CURSUL</h2>
-                                <p>TOEFL</p>
+                                <p>
+                                TOEFL, CAMBRIDGE
+                                <br/>
+                                IELTS, BAC
+                                </p>
                                 <p>DURATA: 21 de zile</p>
                                 <Link to='/ToeflCourse'><button className="coursesButtonPink">AFLA DETALII</button></Link>
                                 <p>4 900 MDL / 245 EUR</p>
@@ -55,7 +59,7 @@ const CoursesBlock = ({targetElementRef}) => {
                         <div className="coursesTicketYellow">
                             <div className="coursesTicketContentYellow">
                                 <h2>CURSUL</h2>
-                                <p>Cambrdige</p>
+                                <p>ENGLEZA INTR-O LUNĂ</p>
                                 <p>DURATA: 21 de zile</p>
                                 <Link to="/CambridgeCourse"><button className="coursesButtonWhite">AFLA DETALII</button></Link>
                                 <p>4 900 MDL / 245 EUR</p>
@@ -64,7 +68,7 @@ const CoursesBlock = ({targetElementRef}) => {
                         <div className="coursesTicketWhite">
                             <div className="coursesTicketContentWhite">
                                 <h2>CURSUL</h2>
-                                <p>Individual</p>
+                                <p>INDIVIDUAL</p>
                                 <p>DURATA: 60 minute </p>
                                 <Link to="/IndividualCourse"><button className="coursesButtonPink">AFLA DETALII</button></Link>
                                 <p>580 MDL / 30 EUR</p>
